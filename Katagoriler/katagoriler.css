@@ -3,6 +3,12 @@
     background-color: #FF8080;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .swipen-button:active
 {
     box-shadow: none;

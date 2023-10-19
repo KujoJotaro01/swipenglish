@@ -1,0 +1,24 @@
+.kart-container {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.kart {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}

@@ -7,11 +7,11 @@ img {
     height: auto;
 }
 .button{
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        line-height: 100px;
-        background-color:#F8FF95;      
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 100px;
+    background-color:#F8FF95;      
 }
 body{
     margin: 0;

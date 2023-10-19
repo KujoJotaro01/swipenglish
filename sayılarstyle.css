@@ -2,8 +2,7 @@
     text-align: center;
     margin-top: 50px;
 }
-
 img {
-    width: 300px; /* Resmin genişliğini ayarlayın */
-    height: auto; /* Otomatik yükseklik ayarlanacak, oranları korumak için */
+    width: 300px; 
+    height: auto;
 }

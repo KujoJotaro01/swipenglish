@@ -6,3 +6,9 @@ img {
     width: 300px; 
     height: auto;
 }
+.button{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        line-height: 100px;
+}

@@ -6,22 +6,24 @@ img {
     width: 300px; 
     height: auto;
 }
-.sayılar-button{
-    width: 200px;
-    height: 60px;
-    color: rgb(2, 2, 2);
-    background-color:#F8FF95;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 30px;
-    cursor: pointer;
-    border: 2px solid #000000;
-    margin: 30px; 
-    box-shadow:5px 8px 0px;
-}
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #a6ff96;
 } 
+img {
+    border-radius: 30px; 
+}
+
+.baslik {
+    width:auto ;
+    height:110px;
+    font-family: 'Dancing Script', cursive;
+    font-size:80px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

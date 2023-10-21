@@ -6,15 +6,48 @@ img {
     width: 300px; 
     height: auto;
 }
-.button{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    line-height: 100px;
-    background-color:#F8FF95;      
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #a6ff96;
+} 
+img {
+    border-radius: 30px; 
+}
+
+.baslik {
+    width:auto ;
+    height:110px;
+    font-family: 'Dancing Script', cursive;
+    font-size:80px;
 }
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.flip-vertical-fwd {
+    -webkit-animation: flip-vertical-fwd 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            animation: flip-vertical-fwd 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+ @-webkit-keyframes flip-vertical-fwd {
+    0% {
+      -webkit-transform: translateZ(0) rotateY(0);
+              transform: translateZ(0) rotateY(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px) rotateY(180deg);
+              transform: translateZ(160px) rotateY(180deg);
+    }
+  }
+  @keyframes flip-vertical-fwd {
+    0% {
+      -webkit-transform: translateZ(0) rotateY(0);
+              transform: translateZ(0) rotateY(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px) rotateY(180deg);
+              transform: translateZ(160px) rotateY(180deg);
+    }
+  }

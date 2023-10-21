@@ -9,7 +9,7 @@ body{
     box-sizing: border-box;
 }
 
-.swipen-button:active
+button:active
 {
     box-shadow: none;
     transform : translatey(5px);
@@ -18,11 +18,11 @@ body{
 için güncellenebili*/
 }
 
-.swipen-button:hover {
+button:hover {
     background-color: #CDFAD5;
 }
 
-.swipen-button {
+button {
 width: 200px;
 height: 60px;
 color: rgb(2, 2, 2);

@@ -23,12 +23,5 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.sayılar-button:active
-{
-    box-shadow: none;
-    transform : translatey(5px);
-    background-color: #98eaa7;
-}
-
-    
+    background-color: #a6ff96;
+} 

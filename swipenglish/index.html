@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipenglish</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="top-left-button"></button>
+    <div class="container">
+        <div class="baslik">
+            <h1>SwipEnglish</h1>
+        </div>
+        <button class="englishtoturkishbutton">İngilizce Türkçe</button><br>
+        <button class="turkishtoenglishbutton">Türkçe İngilizce</button><br>
+        <button class="quizbutton">Quiz</button><br>
+    </div>
+    <script>
+        window.onload = function() 
+        {
+            document.querySelector(".englishtoturkishbutton").addEventListener("click", function() 
+            {
+                window.location.href = "Katagoriler/katagoriler.html";
+            });
+        };
+    </script>
+</body>
+</html>

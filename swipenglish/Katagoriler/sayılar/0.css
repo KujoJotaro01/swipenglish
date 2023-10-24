@@ -1,0 +1,12 @@
+.container 
+{    
+text-align: center;
+padding-top: 20px; 
+
+}
+img {
+    width: 300px; /* Genişlik 300 piksel olsun */
+    height: 900px; /* Yükseklik 200 piksel olsun */
+}
+
+

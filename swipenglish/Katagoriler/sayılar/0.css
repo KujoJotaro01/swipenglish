@@ -5,8 +5,8 @@ padding-top: 20px;
 
 }
 img {
-    width: 300px; /* Genişlik 300 piksel olsun */
-    height: 900px; /* Yükseklik 200 piksel olsun */
+    width: 300px; 
+    height: auto; 
 }
 
 

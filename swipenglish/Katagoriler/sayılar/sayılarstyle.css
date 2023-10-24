@@ -2,6 +2,10 @@
     text-align: center;
     margin-top: 50px;
 }
+.container1 {
+    text-align: center;
+    margin-top: 50px;
+}
 img {
     width: 300px; 
     height: auto;
@@ -21,6 +25,7 @@ img {
     height:110px;
     font-family: 'Dancing Script', cursive;
     font-size:80px;
+    
 }
 body{
     margin: 0;

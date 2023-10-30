@@ -13,7 +13,7 @@ img {
 /*animasyon kodları şuanlık bu animasyon kalsın ben ali güngör*/
 .flip-2-ver-right-fwd {
 	-webkit-animation: flip-2-ver-right-fwd 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	        animation: flip-2-ver-right-fwd 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: flip-2-ver-right-fwd 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
             
 }
  @-webkit-keyframes flip-2-ver-right-fwd {

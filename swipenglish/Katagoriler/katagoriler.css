@@ -23,7 +23,7 @@ button:hover {
 }
 
 button {
-width: 200px;
+width: 300px;
 height: 60px;
 color: rgb(2, 2, 2);
 background-color:#F8FF95;
@@ -32,7 +32,7 @@ font-weight: bold;
 border-radius: 30px;
 cursor: pointer;
 border: 2px solid #000000;
-margin: 30px; 
+margin: 4cqb; 
 box-shadow:5px 8px 0px;
 }
 
@@ -40,5 +40,11 @@ box-shadow:5px 8px 0px;
     width:auto ;
     height:110px;
     font-family: 'Dancing Script', cursive;
-    font-size:80px;
+    font-size:45px;
+    
+}
+
+div{
+    display: block;
+        margin-top: -70px;
 }

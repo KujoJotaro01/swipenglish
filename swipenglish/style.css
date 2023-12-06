@@ -61,12 +61,12 @@ için güncellenebilir*/
 {
   height: 60px;
   width: 300px;
-  color: #57375D;
+  color: #57375D;             
   background-color: #F8FF95;
   font-size: 18px;
   font-weight: bold;
   border-radius: 30px;
-  cursor: pointer;
+  cursor: pointer;                       
   border: 2px solid #000000;
   margin: 10px; /* Butonlar arasında boşluk bırakmak için */
   font-family: "Dancing Script";
@@ -115,6 +115,7 @@ background-color: #a6ff96;
 
 .baslik{
     font-family: "Dancing Script", cursive;
-    font-size: 30px;
+    font-size: 45px;
     color: #57375D;
+    margin-top: -90px;
 }

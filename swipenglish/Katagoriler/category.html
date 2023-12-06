@@ -8,6 +8,9 @@
     </head>
 
     <body>
+        <div id="loading">
+            <img src="load.gif" alt="Yükleniyor" />
+          </div> 
 
         <div class="container">
             <div class="baslik"><h1>Category</h1></div>
@@ -39,6 +42,11 @@
                 window.location.href = "sayılar/sayılarrr.html";
             });
         };
+        window.addEventListener('load', fg_load)
+    
+    function fg_load() {
+        document.getElementById('loading').style.display = 'none'
+    }
     </script>
 
 </html>

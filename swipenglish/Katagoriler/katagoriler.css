@@ -40,11 +40,10 @@ box-shadow:5px 8px 0px;
     width:auto ;
     height:110px;
     font-family: 'Dancing Script', cursive;
-    font-size:45px;
-    
+    font-size:60px;
+    padding-bottom: 90px;
 }
 
 div{
     display: block;
-        margin-top: -70px;
-}
+        margin-top: -90px;}

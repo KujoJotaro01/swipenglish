@@ -1,4 +1,4 @@
-.englishtoturkishbutton 
+.englishtoturkishbutton, .turkishtoenglishbutton,.quizbutton
 {
 height: 70px;
 width: 350px;
@@ -17,33 +17,14 @@ box-shadow:5px 8px 0px
 {
 background-color:#FFA1F5;
 }
-.englishtoturkishbutton:active 
-{
-background-color:#BC7AF9;
-}
 .englishtoturkishbutton:active
 {
 box-shadow: none;
 transform : translatey(5px);
+background-color:#BC7AF9;
 /* gölgenin açısına göre veya gölgenin üstüne çökmesi
 için güncellenebilir*/
 }
-.turkishtoenglishbutton
-{
-  height: 70px;
-  width: 350px;
-  color: #57375D;
-  background-color: #F8FF95;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 50px;
-  cursor: pointer;
-  border: 2px solid #000000;
-  margin: 10px; /* Butonlar arasında boşluk bırakmak için */
-  font-family: "Dancing Script";
-  box-shadow: 5px 8px 0px;
-}
-
 .turkishtoenglishbutton:hover
 {
   background-color: #FFA1F5;
@@ -57,22 +38,6 @@ için güncellenebilir*/
   /* gölgenin açısına göre veya gölgenin üstüne çökmesi
      için güncellenebilir */
 }
-.quizbutton
-{
-  height: 70px;
-  width: 350px;
-  color: #57375D;             
-  background-color: #F8FF95;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 50px;
-  cursor: pointer;                       
-  border: 2px solid #000000;
-  margin: 10px; /* Butonlar arasında boşluk bırakmak için */
-  font-family: "Dancing Script";
-  box-shadow: 5px 8px 0px;
-}
-
 .quizbutton:hover
 {
   background-color: #FFA1F5;

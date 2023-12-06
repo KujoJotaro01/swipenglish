@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flip Card Example</title>
+</head>
+<body>
+    <div class="card" id="card">
+        <div class="card-inner" onmousedown="startDragging(event)" onmouseup="stopDragging()">
+            <div class="card-front">
+                <p>Ön Yüz</p>
+            </div>
+            <div class="card-back">
+                <p>Arka Yüz</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

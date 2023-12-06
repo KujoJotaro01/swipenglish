@@ -1,12 +1,12 @@
 .englishtoturkishbutton 
 {
-height: 60px;
-width: 300px;
+height: 70px;
+width: 350px;
 color:#57375D;
 background-color:#F8FF95;
 font-size: 18px;
 font-weight: bold;
-border-radius:30px;
+border-radius:50px;
 cursor: pointer;
 border: 2px solid #000000;
 margin: 10px; /* Butonlar arasında boşluk bırakmak için */
@@ -36,7 +36,7 @@ için güncellenebilir*/
   background-color: #F8FF95;
   font-size: 18px;
   font-weight: bold;
-  border-radius: 30px;
+  border-radius: 50px;
   cursor: pointer;
   border: 2px solid #000000;
   margin: 10px; /* Butonlar arasında boşluk bırakmak için */
@@ -65,7 +65,7 @@ için güncellenebilir*/
   background-color: #F8FF95;
   font-size: 18px;
   font-weight: bold;
-  border-radius: 30px;
+  border-radius: 50px;
   cursor: pointer;                       
   border: 2px solid #000000;
   margin: 10px; /* Butonlar arasında boşluk bırakmak için */

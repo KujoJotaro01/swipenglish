@@ -30,8 +30,8 @@ için güncellenebilir*/
 }
 .turkishtoenglishbutton
 {
-  height: 60px;
-  width: 300px;
+  height: 70px;
+  width: 350px;
   color: #57375D;
   background-color: #F8FF95;
   font-size: 18px;
@@ -59,8 +59,8 @@ için güncellenebilir*/
 }
 .quizbutton
 {
-  height: 60px;
-  width: 300px;
+  height: 70px;
+  width: 350px;
   color: #57375D;             
   background-color: #F8FF95;
   font-size: 18px;
@@ -83,8 +83,6 @@ için güncellenebilir*/
   background-color: #BC7AF9;
   box-shadow: none;
   transform: translateY(5px);
-  /* gölgenin açısına göre veya gölgenin üstüne çökmesi
-     için güncellenebilir */
 }
 
 .container 

@@ -47,6 +47,6 @@ transform: rotateY(180deg);
 }
 
 img {
-    overflow: hidden; /*img'i kart boyutuna göre küçültmemizi sağlıyor bu kodu silen gaydir*/
+    overflow: hidden; /*img'i kart boyutuna göre küçültmemizi sağlıyor*/
     border-radius: 16px;
 }

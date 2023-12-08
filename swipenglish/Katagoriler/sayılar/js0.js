@@ -29,12 +29,6 @@ document.getElementById('card').addEventListener('mousemove', function (event) {
     }
 });
 
-
-
-
-
-
-//bu kısım sonradan, telefonlarda da çalışması için eklendi. test edilecek, çalışmıyor ise silinecek.
 document.getElementById('card').addEventListener('touchstart', function (event) {
     startDragging(event.touches[0]);
 });

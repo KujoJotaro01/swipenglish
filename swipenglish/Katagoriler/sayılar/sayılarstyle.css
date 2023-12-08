@@ -2,34 +2,28 @@
     text-align: center;
     margin-top: 50px;
 }
+
 .container1 {
     text-align: center;
     margin-top: 50px;
 }
+
 img {
-    width: 300px; 
+    width: 100%;
     height: auto;
+    border-radius: 30px;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #a6ff96;
-} 
-img {
-    border-radius: 30px; 
 }
 
 .baslik {
-    width:auto ;
-    height:110px;
+    width: auto;
+    height: 110px;
     font-family: 'Dancing Script', cursive;
-    font-size:80px;
-    
+    font-size: 80px;
 }
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-

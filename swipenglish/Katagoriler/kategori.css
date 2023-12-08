@@ -1,6 +1,5 @@
 .container {
     text-align: center;
-    
 }
 
 body{
@@ -32,7 +31,7 @@ font-weight: bold;
 border-radius: 50px;
 cursor: pointer;
 border: 2px solid #000000;
-margin: 4cqb; 
+margin: 20px; 
 box-shadow:5px 8px 0px;
 }
 
@@ -46,4 +45,4 @@ box-shadow:5px 8px 0px;
 
 div{
     display: block;
-        margin-top: -90px;}
+    margin-top: -90px;}

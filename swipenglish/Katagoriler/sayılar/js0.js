@@ -28,3 +28,29 @@ document.getElementById('card').addEventListener('mousemove', function (event) {
         }
     }
 });
+
+
+
+
+
+
+//bu kısım sonradan, telefonlarda da çalışması için eklendi. test edilecek, çalışmıyor ise silinecek.
+document.getElementById('card').addEventListener('touchstart', function (event) {
+    startDragging(event.touches[0]);
+});
+
+document.getElementById('card').addEventListener('touchend', function () {
+    stopDragging();
+});
+
+document.getElementById('card').addEventListener('touchmove', function (event) {
+    if (isDragging) {
+        const card = document.querySelector('.card');
+        const deltaX = event.touches[0].clientX - initialX;
+
+        if (Math.abs(deltaX) > 10) {
+            card.classList.toggle('flipped');
+            stopDragging();
+        }
+    }
+});

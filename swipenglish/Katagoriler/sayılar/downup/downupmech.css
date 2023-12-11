@@ -1,5 +1,5 @@
 body {
-    background-color: red;
+    background-color:black;
     font-family: 'arial', sans-serif;
 }
 :root {
@@ -39,14 +39,14 @@ body {
     background-color: blue;
 }
 #card2 .card-body{
-    background-color: red;
+    background-color: white;
 }
 #card3 .card-body{
     background-color: darkcyan;
 }
 .card-body{
     box-sizing: border-box;
-    padding: 30px;
+    padding: 300px;
     border-radius: 50px;
     box-shadow: 30px;
 }

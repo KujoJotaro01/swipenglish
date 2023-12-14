@@ -1,9 +1,11 @@
 let isDragging = false;
 let initialX;
+let initialY;
 
 function startDragging(event) {
     isDragging = true;
     initialX = event.clientX;
+    initialY = event.clientY;
 }
 
 function stopDragging() {
@@ -21,11 +23,15 @@ document.getElementById('card').addEventListener('mousemove', function (event) {
     if (isDragging) {
         const card = document.querySelector('.card');
         const deltaX = event.clientX - initialX;
+        const deltaY = event.clientY - initialY;
 
         if (Math.abs(deltaX) > 10) { // Prevent small accidental movements
             card.classList.toggle('flipped');
             stopDragging(); // Stop dragging after flipping
         }
+        else if (Math.abs(deltaY) > 10) { 
+            // y yekseninde kaydıma halinde çalışacak kısım
+        }        
     }
 });
 

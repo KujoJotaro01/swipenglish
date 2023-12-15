@@ -29,10 +29,9 @@ document.getElementById('card').addEventListener('mousemove', function (event) {
             card.classList.toggle('flipped');
             stopDragging(); // Stop dragging after flipping
         }
-        else if (Math.abs(deltaY) > 10) { // bir sonraki karta geçişşi sağladık şimdilik bu şekilde 
-            window.location.href = "bir.html"; 
-        }     
-        
+        else if (Math.abs(deltaY) > 10) { // bir önceki karta geçişi sağladık şimdilik bu şekilde 
+            window.location.href = "0.html";
+        }       
     }
 });
 

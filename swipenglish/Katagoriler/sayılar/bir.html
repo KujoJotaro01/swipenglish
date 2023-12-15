@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bir.css">
+    <title>Flip Card Example</title>
+</head>
+<body>
+    <div class="card" id="card">
+        <div class="card-inner" onmousedown="startDragging(event)" onmouseup="stopDragging()">
+            <div class="card-front">
+                <img id="resimId" src="images/heart.jpg">
+            </div>
+            <div class="card-back">
+                <img id="resimId1" src="images/kalp.jpg">
+            </div>
+        </div>
+    </div>
+    <script src="bir.js"></script>
+</body>
+</html>

@@ -25,17 +25,17 @@ document.getElementById('card').addEventListener('mousemove', function (event) {
         const deltaX = event.clientX - initialX;
         const deltaY = event.clientY - initialY;
 
-        if (Math.abs(deltaX) > 10) { 
+        if (Math.abs(deltaX) > 60) { 
             //math abs mutlak yön yani sağa 10 sola -10 farketmeksizin çalışıcak math absi yukarı aşağı da kullanamayız
             // sağ sol flip hareketini sağlıyor 
             // yukarı aşağı sağ sol hepsinin 10 luk bir ölçütte hareket yapması karışıklığa sebebiyet verebilir bu sebeple şimdilik değerleri değiştiricem
             card.classList.toggle('flipped');
             stopDragging(); // Stop dragging after flipping
         }
-        else if (deltaY > 10) { // Yukarı yönde sürükleme
+        else if (deltaY > 60) { // Yukarı yönde sürükleme
             window.location.href = "0.html"; // iki.html yazılınca bunu da aktifleştiricez
         }       
-        else if (deltaY < -10) {  // Aşağı yönde sürükleme
+        else if (deltaY < -60) {  // Aşağı yönde sürükleme
             window.location.href = "iki.html"; 
             // deltaY < -10 kullanma sebebimiz aşağı yukarı yönleri ayırt edebilmek
         }      

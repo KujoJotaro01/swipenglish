@@ -25,14 +25,14 @@ document.getElementById('card').addEventListener('mousemove', function (event) {
         const deltaX = event.clientX - initialX;
         const deltaY = event.clientY - initialY;
 
-        if (Math.abs(deltaX) > 10) { // Prevent small accidental movements
+        if (Math.abs(deltaX) > 60) { // Prevent small accidental movements
             card.classList.toggle('flipped');
             stopDragging(); // Stop dragging after flipping
         }
       /*  else if (Math.abs(deltaY) > 10) { // bir sonraki karta geçişşi sağladık şimdilik bu şekilde 
             window.location.href = "bir.html"; 
         }     */ // bu ifade yanlış ama şimdilik kalsın toplu değerlendirlir
-        else if (deltaY < -10) {  // Aşağı yönde sürükleme
+        else if (deltaY < -60) {  // Aşağı yönde sürükleme
             window.location.href = "bir.html"; 
         }      
         

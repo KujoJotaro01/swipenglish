@@ -32,13 +32,13 @@ document.getElementById('card').addEventListener('mousemove', function (event) {
             card.classList.toggle('flipped');
             stopDragging(); // Stop dragging after flipping
         }
-       /*else if (deltaY > 10) { // Yukarı yönde sürükleme
-            window.location.href = "0.html"; // iki.html yazılınca bunu da aktifleştiricez
-        }       */
-        else if (deltaY < -10) {  // Aşağı yönde sürükleme
-            window.location.href = "iki.html"; 
+        else if (deltaY > 10) { // Yukarı yönde sürükleme
+            window.location.href = "bir.html"; 
+        }       
+       /* else if (deltaY < -10) {  // Aşağı yönde sürükleme
+            window.location.href = "üc.html"; 
             // deltaY < -10 kullanma sebebimiz aşağı yukarı yönleri ayırt edebilmek
-        }      
+        }     */ 
     }
 });
 

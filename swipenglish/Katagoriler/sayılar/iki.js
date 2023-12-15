@@ -35,7 +35,7 @@ document.getElementById('card').addEventListener('mousemove', function (event) {
         else if (deltaY > 60) { // Yukarı yönde sürükleme
             window.location.href = "bir.html"; 
         }       
-       /* else if (deltaY < -10) {  // Aşağı yönde sürükleme
+       /* else if (deltaY < -60) {  // Aşağı yönde sürükleme
             window.location.href = "üc.html"; 
             // deltaY < -10 kullanma sebebimiz aşağı yukarı yönleri ayırt edebilmek
         }     */ 

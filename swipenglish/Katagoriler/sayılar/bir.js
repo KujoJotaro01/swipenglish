@@ -59,5 +59,10 @@ document.getElementById('card').addEventListener('touchmove', function (event) {
             card.classList.toggle('flipped');
             stopDragging();
         }
-    }
+        else if (deltaY > 60) { // Yukarı yönde sürükleme
+            window.location.href = "0.html"; // iki.html yazılınca bunu da aktifleştiricez
+        }       
+        else if (deltaY < -60) {  // Aşağı yönde sürükleme
+            window.location.href = "iki.html"; 
+        }  }
 });

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+    <title>Merhaba Recep</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        main {
+            height: 100vh;
+            width: 100%;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+
+        #section-1 {
+            background-color: #a6ff96;
+        }
+
+        #section-2 {
+            background-color: brown;
+        }
+
+        main > section {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+
+        main > section > div {
+            font-size: 80px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            width: 350px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .card.dragging .card-inner {
+            transition: none;
+        }
+
+        .card.flipped .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front,
+        .card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 16px;
+            color: white;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+            pointer-events: none;
+
+        }
+
+        .card-front img,
+        .card-back img {
+        pointer-events: none;
+        user-select: none;
+        }
+
+        .card-back {
+        transform: rotateY(180deg);
+        }
+
+        img {
+        overflow: hidden;
+        border-radius: 16px;
+        user-select: none;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <section>
+            <div>
+                <div class="card" id="card" onmousedown="startDragging(event, 1)" onmouseup="stopDragging(1)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img id="resimId" loading="eager" src="0.jpg">
+                        </div>
+                        <div class="card-back">
+                            <img id="resimId1" loading="eager" src="01.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div class="card" id="card2" onmousedown="startDragging(event, 2)" onmouseup="stopDragging(2)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img id="resimId2" loading="eager" src="0.jpg">
+                        </div>
+                        <div class="card-back">
+                            <img id="resimId3" loading="eager" src="01.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        let isDragging1 = false;
+        let initialX1;
+        let initialY1;
+
+        let isDragging2 = false;
+        let initialX2;
+        let initialY2;
+
+        function startDragging(event, cardNumber) {
+            if (cardNumber === 1) {
+                isDragging1 = true;
+                initialX1 = event.clientX;
+                initialY1 = event.clientY;
+            } else if (cardNumber === 2) {
+                isDragging2 = true;
+                initialX2 = event.clientX;
+                initialY2 = event.clientY;
+            }
+        }
+
+        function stopDragging(cardNumber) {
+            if (cardNumber === 1) {
+                isDragging1 = false;
+            } else if (cardNumber === 2) {
+                isDragging2 = false;
+            }
+        }
+
+        document.getElementById('card').addEventListener('mousemove', function (event) {
+            if (isDragging1) {
+                const card = document.getElementById('card');
+                const deltaX = event.clientX - initialX1;
+                if (Math.abs(deltaX) > 60) {
+                    card.classList.toggle('flipped');
+                    stopDragging(1);
+                }
+            }
+        });
+
+        document.getElementById('card').addEventListener('touchstart', function (event) {
+            startDragging(event.touches[0], 1);
+        });
+
+        document.getElementById('card').addEventListener('touchend', function () {
+            stopDragging(1);
+        });
+
+        document.getElementById('card').addEventListener('touchmove', function (event) {
+            if (isDragging1) {
+                const card = document.getElementById('card');
+                const deltaX = event.touches[0].clientX - initialX1;
+                if (Math.abs(deltaX) > 10) {
+                    card.classList.toggle('flipped');
+                    stopDragging(1);
+                }
+            }
+        });
+
+        document.getElementById('card2').addEventListener('mousemove', function (event) {
+            if (isDragging2) {
+                const card = document.getElementById('card2');
+                const deltaX = event.clientX - initialX2;
+                if (Math.abs(deltaX) > 60) {
+                    card.classList.toggle('flipped');
+                    stopDragging(2);
+                }
+            }
+        });
+
+        document.getElementById('card2').addEventListener('touchstart', function (event) {
+            startDragging(event.touches[0], 2);
+        });
+
+        document.getElementById('card2').addEventListener('touchend', function () {
+            stopDragging(2);
+        });
+
+        document.getElementById('card2').addEventListener('touchmove', function (event) {
+            if (isDragging2) {
+                const card = document.getElementById('card2');
+                const deltaX = event.touches[0].clientX - initialX2;
+                if (Math.abs(deltaX) > 10) {
+                    card.classList.toggle('flipped');
+                    stopDragging(2);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

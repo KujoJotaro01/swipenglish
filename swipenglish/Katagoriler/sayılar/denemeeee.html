@@ -193,7 +193,7 @@
             if (isDragging1) {
                 const card = document.getElementById('card');
                 const deltaX = event.touches[0].clientX - initialX1;
-                if (Math.abs(deltaX) > 60) {
+                if (Math.abs(deltaX) > 200) {
                     card.classList.toggle('flipped');
                     stopDragging(1);
                 }
@@ -204,7 +204,7 @@
             if (isDragging2) {
                 const card = document.getElementById('card2');
                 const deltaX = event.clientX - initialX2;
-                if (Math.abs(deltaX) > 60) {
+                if (Math.abs(deltaX) > 10) {
                     card.classList.toggle('flipped');
                     stopDragging(2);
                 }

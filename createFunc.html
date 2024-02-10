@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Creator</title>
+    <style>
+        .card {
+            width: 200px;
+            height: 300px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 80%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .card h2 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .card p {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div id="cardContainer"></div>
+
+<script>
+    // Fonksiyon ile kart oluştur
+    function createCard(name, imageSrc, description) {
+        const cardContainer = document.getElementById('cardContainer');
+        
+        // Kart elementini oluştur
+        const card = document.createElement('div');
+        card.classList.add('card');
+        
+        // Kart içeriği
+        const image = document.createElement('img');
+        image.src = imageSrc;
+        const title = document.createElement('h2');
+        title.textContent = name;
+        const desc = document.createElement('p');
+        desc.textContent = description;
+        
+        // Kart içeriğini kart elementine ekle
+        card.appendChild(image);
+        card.appendChild(title);
+        card.appendChild(desc);
+        
+        // Kartı sayfaya ekle
+        cardContainer.appendChild(card);
+    }
+
+    // Örnek kullanım
+    createCard('Araba Kartı', 'car.jpg', 'Bu kart bir araba kartıdır.');
+    createCard('Bisiklet Kartı', 'bike.jpg', 'Bu kart bir bisiklet kartıdır.');
+    createCard('Uçak Kartı', 'plane.jpg', 'Bu kart bir uçak kartıdır.');
+</script>
+
+</body>
+</html>

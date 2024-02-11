@@ -6,10 +6,13 @@
     <title>Draggable Cards</title>
     <style>
         .card-container {
-            display: flex;
+
+            flex-direction: column; /* Kartları alt alta sırala */
+            display:flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: auto;
+            flex-wrap: wrap;
         }
 
         .card {
@@ -19,50 +22,74 @@
             border-radius: 10px;
             margin: 10px;
             overflow: hidden;
+            margin: 150px 0; /* Üst ve altta boşluk bırak */
+
             position: relative;
             perspective: 1000px;
-            transition: transform 0.5s;
+            transition: transform 0.6s;
+            user-select: none; /* Prevent selection of the entire card */
         }
 
-        .card img {
+        .card .back-image,
+        .card .front-image {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            pointer-events: none;
+            user-select: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .card.flipped .back-image {
+            display: block; /* Arka yüzü sürükleme başladığında göster */
         }
 
         .card.flipped {
             transform: rotateY(180deg);
         }
+
+        .back-image {
+            display: none; /* Arka yüzü başlangıçta gizle */
+        }
     </style>
 </head>
 <body>
     <div id="cardContainer" class="card-container">
-        <!-- Kartlar buraya eklenecek -->
+        <!-- Cards will be added here -->
     </div>
 
     <script>
-        function createCard(name, imageSrc) {
+        function createCard(name, frontImageSrc, backImageSrc) {
             const cardContainer = document.getElementById('cardContainer');
-            
-            // Kart elementini oluştur
+
+            // Create card element
             const card = document.createElement('div');
             card.classList.add('card');
-            
-            // Kart içeriği
-            const image = document.createElement('img');
-            image.src = imageSrc;
 
-            // Kart içeriğini kart elementine ekle
-            card.appendChild(image);
-         
-            // Kartı sayfaya ekle
+            // Front face image
+            const frontImage = document.createElement('img');
+            frontImage.src = frontImageSrc;
+            frontImage.classList.add('front-image');
+
+            // Back face image
+            const backImage = document.createElement('img');
+            backImage.src = backImageSrc;
+            backImage.classList.add('back-image');
+
+            // Append images to the card
+            card.appendChild(frontImage);
+            card.appendChild(backImage);
+
+            // Append card to the container
             cardContainer.appendChild(card);
 
-            // Sürüklenebilir hale getir
-            setupDraggableCard(card, name);
+            // Make card draggable
+            setupDraggableCard(card);
         }
 
-        function setupDraggableCard(card, cardNumber) {
+        function setupDraggableCard(card) {
             let isDragging = false;
             let initialX;
             let initialY;
@@ -81,7 +108,7 @@
                 if (isDragging) {
                     const deltaX = (event.clientX || event.touches[0].clientX) - initialX;
                     const deltaY = (event.clientY || event.touches[0].clientY) - initialY;
-                    const threshold = 60;
+                    const threshold = 70;
 
                     if (Math.abs(deltaX) > threshold || Math.abs(deltaY) > threshold) {
                         card.classList.toggle('flipped');
@@ -90,6 +117,7 @@
                 }
             }
 
+            // Add event listeners for dragging
             card.addEventListener('mousedown', startDragging);
             card.addEventListener('mouseup', stopDragging);
             card.addEventListener('touchstart', startDragging);
@@ -98,15 +126,10 @@
             card.addEventListener('touchmove', handleDrag);
         }
 
-        // Örnek kartlar oluştur
-        createCard('1', '1.jpg' , '2.jpg');
-        createCard('1', '1.jpg' , '2.jpg');
-        createCard('1', '1.jpg' , '2.jpg');
-        createCard('1', '1.jpg' , '2.jpg');
-        createCard('1', '1.jpg' , '2.jpg');
-        createCard('1', '1.jpg' , '2.jpg');
+        createCard('bir', '1.jpg' , '2.jpg');
+        createCard('iki', '3.jpg' , '4.jpg');
 
-        
+
     </script>
 </body>
 </html>

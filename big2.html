@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draggable Cards</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
         .card-container {
-
+            height: 100vh;
+            width: 100%;
             flex-direction: column; /* Kartları alt alta sırala */
             display:flex;
             justify-content: center;
@@ -23,7 +29,6 @@
             margin: 10px;
             overflow: hidden;
             margin: 150px 0; /* Üst ve altta boşluk bırak */
-
             position: relative;
             perspective: 1000px;
             transition: transform 0.6s;
@@ -125,11 +130,18 @@
             card.addEventListener('mousemove', handleDrag);
             card.addEventListener('touchmove', handleDrag);
         }
-
         createCard('bir', '1.jpg' , '2.jpg');
         createCard('iki', '3.jpg' , '4.jpg');
-
-
+        createCard('bir', '1.jpg' , '2.jpg');
+        createCard('iki', '3.jpg' , '4.jpg');
+        createCard('bir', '1.jpg' , '2.jpg');
+        createCard('iki', '3.jpg' , '4.jpg');
+        createCard('bir', '1.jpg' , '2.jpg');
+        createCard('iki', '3.jpg' , '4.jpg');
+        createCard('bir', '1.jpg' , '2.jpg');
+        createCard('iki', '3.jpg' , '4.jpg');
+        createCard('bir', '1.jpg' , '2.jpg');
+        createCard('iki', '3.jpg' , '4.jpg');
     </script>
 </body>
 </html>

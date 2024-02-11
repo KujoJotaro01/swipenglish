@@ -10,6 +10,7 @@
             padding: 0;
             font-family: sans-serif;
         }
+       
         .card-container {
             height: 100vh;
             width: 100%;
@@ -61,9 +62,10 @@
     </style>
 </head>
 <body>
-    <div id="cardContainer" class="card-container">
-        <!-- Cards will be added here -->
-    </div>
+
+        <div id="cardContainer" class="card-container">
+            <!-- Cards will be added here -->
+        </div>
 
     <script>
         function createCard(name, frontImageSrc, backImageSrc) {
@@ -127,6 +129,7 @@
             card.addEventListener('mouseup', stopDragging);
             card.addEventListener('touchstart', startDragging);
             card.addEventListener('touchend', stopDragging);
+            
             card.addEventListener('mousemove', handleDrag);
             card.addEventListener('touchmove', handleDrag);
         }

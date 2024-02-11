@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+    <title>Merhaba Recep</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        main {
+            height: 100vh;
+            width: 100%;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+
+        #section-1 {
+            background-color: #a6ff96;
+        }
+
+        #section-2 {
+            background-color: brown;
+        }
+
+        main > section {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+
+        main > section > div {
+            font-size: 80px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            width: 350px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .card.dragging .card-inner {
+            transition: none;
+        }
+
+        .card.flipped .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front,
+        .card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 16px;
+            color: white;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+            pointer-events: none;
+
+        }
+
+        .card-front img,
+        .card-back img {
+        pointer-events: none;
+        user-select: none;
+        }
+
+        .card-back {
+        transform: rotateY(180deg);
+        }
+
+        img {
+        overflow: hidden;
+        border-radius: 16px;
+        user-select: none;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <section>
+            <div>
+                <div class="card" id="card" onmousedown="startDragging(event, 1)" onmouseup="stopDragging(1)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img id="resimId" loading="eager" src="0.jpg">
+                        </div>
+                        <div class="card-back">
+                            <img id="resimId1" loading="eager" src="01.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div class="card" id="card2" onmousedown="startDragging(event, 2)" onmouseup="stopDragging(2)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img id="resimId2" loading="eager" src="0.jpg">
+                        </div>
+                        <div class="card-back">
+                            <img id="resimId3" loading="eager" src="01.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+    function setupDraggableCard(cardId, cardNumber) {
+    let isDragging = false;
+    let initialX;
+    let initialY;
+
+    const card = document.getElementById(cardId);
+
+    function startDragging(event) {
+        isDragging = true;
+        initialX = event.clientX || event.touches[0].clientX;
+        initialY = event.clientY || event.touches[0].clientY;
+    }
+
+    function stopDragging() {
+        isDragging = false;
+    }
+
+    function handleDrag(event) {
+        if (isDragging) {
+            const deltaX = (event.clientX || event.touches[0].clientX) - initialX;
+            const deltaY = (event.clientY || event.touches[0].clientY) - initialY;
+            const threshold = 60;
+
+            if (Math.abs(deltaX) > threshold || Math.abs(deltaY) > threshold) {
+                card.classList.toggle('flipped');
+                stopDragging();
+            }
+        }
+    }
+
+    card.addEventListener('mousedown', startDragging);
+    card.addEventListener('mouseup', stopDragging);
+    card.addEventListener('touchstart', startDragging);
+    card.addEventListener('touchend', stopDragging);
+    card.addEventListener('mousemove', handleDrag);
+    card.addEventListener('touchmove', handleDrag);
+}
+
+// Kartları sürüklenebilir hale getir
+setupDraggableCard('card', 1);
+setupDraggableCard('card2', 2);
+
+/*for (let i = 1; i <= 50; i++) {
+    const cardId = 'card' + i;
+    setupDraggableCard(cardId, i);
+}*/
+
+    </script>
+</body>
+</html>

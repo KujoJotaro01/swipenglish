@@ -5,7 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Creator</title>
     <style>
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+    
         .card {
+            pointer-events: none;
+            user-select: none;
             width: 200px;
             height: 300px;
             background-color: #f0f0f0;
@@ -30,18 +40,12 @@
             width: 80%;
             height: auto;
             border-radius: 10px;
+            pointer-events: none;
+            user-select: none;
         }
-
-        .card h2 {
-            margin-top: 10px;
-            font-size: 20px;
-            color: #333;
-        }
-
-        .card p {
-            margin-top: 5px;
-            font-size: 16px;
-            color: #666;
+        img {
+            user-select: none;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -50,8 +54,8 @@
 <div id="cardContainer"></div>
 
 <script>
-    // Fonksiyon ile kart oluştur
-    function createCard(name, imageSrc, description) {
+        // Fonksiyon ile kart oluştur
+        function createCard(name, imageSrc) {
         const cardContainer = document.getElementById('cardContainer');
         
         // Kart elementini oluştur
@@ -61,27 +65,22 @@
         // Kart içeriği
         const image = document.createElement('img');
         image.src = imageSrc;
-        const title = document.createElement('h2');
-        title.textContent = name;
-        const desc = document.createElement('p');
-        desc.textContent = description;
-        
+    
         // Kart içeriğini kart elementine ekle
         card.appendChild(image);
-        card.appendChild(title);
-        card.appendChild(desc);
+     
         
         // Kartı sayfaya ekle
         cardContainer.appendChild(card);
     }
 
     // Örnek kullanım
-    createCard('Araba Kartı', '1.jpg', 'Bu kart bir araba kartıdır.');
-    createCard('Bisiklet Kartı', '2.jpg', 'Bu kart bir bisiklet kartıdır.');
-    createCard('Uçak Kartı', '3.jpg', 'Bu kart bir uçak kartıdır.');
-    createCard('Araba Kartı', '4.jpg', 'Bu kart bir araba kartıdır.');
-    createCard('Bisiklet Kartı', '5.jpg', 'Bu kart bir bisiklet kartıdır.');
-    createCard('Uçak Kartı', '6.jpg', 'Bu kart bir uçak kartıdır.');
+    createCard('1', '1.jpg');
+    createCard('2', '2.jpg');
+    createCard('3', '3.jpg');
+    createCard('4', '4.jpg');
+    createCard('5', '5.jpg');
+    createCard('6', '6.jpg');
 </script>
 
 </body>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Creator</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        .card {
+            position: relative;
+            perspective: 1000px;
+            width: 200px;
+            height: 300px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: grab; /* İlk tıklamada kartı sürükleyebilmek için */
+            user-select: none;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 80%;
+            height: auto;
+            border-radius: 10px;
+            pointer-events: none;
+            user-select: none;
+        }
+        .back {
+            transform: rotateY(180deg); /* Arka yüzü döndürür */
+            display: none; /* Başlangıçta arka yüzü gizler */
+        }
+    </style>
+</head>
+<body>
+
+<div class="cardContainer"></div>
+<div class="cardContainer"></div>
+<div class="cardContainer"></div>
+
+<script>
+    // Fonksiyon ile kart oluştur
+    function createCard(name, frontImageSrc, backImageName) {
+        const cardContainer = document.querySelector('.cardContainer'); // Class seçicisi kullanılmalı
+
+        // Kart elementini oluştur
+        const card = document.createElement('div');
+        card.classList.add('card');
+
+        // Ön yüz
+        const frontImage = document.createElement('img');
+        frontImage.src = frontImageSrc;
+        frontImage.classList.add('front');
+
+        // Arka yüz
+        const backImage = document.createElement('img');
+        backImage.src = backImageName;
+        backImage.classList.add('back');
+
+        // Kart içeriğini kart elementine ekle
+        card.appendChild(frontImage);
+        card.appendChild(backImage);
+
+        // Kartı sayfaya ekle
+        cardContainer.appendChild(card);
+
+        let isDragging = false;
+        let initialX = 0;
+
+        // Kartı sürüklemeyi başlatır
+        card.addEventListener('mousedown', function(event) {
+            isDragging = true;
+            initialX = event.clientX;
+            card.style.cursor = 'grabbing'; // Sürükleme işlemi sırasında imleçi değiştir
+        });
+
+        // Kartı sürüklerken
+        card.addEventListener('mousemove', function(event) {
+            if (isDragging) {
+                const deltaX = event.clientX - initialX;
+                if (deltaX > 60) {
+                    frontImage.style.display = 'none';
+                    backImage.style.display = 'block';
+                } else {
+                    frontImage.style.display = 'block';
+                    backImage.style.display = 'none';
+                }
+            }
+        });
+
+        // Kartı bırakır
+        card.addEventListener('mouseup', function() {
+            isDragging = false;
+            card.style.cursor = 'grab'; // Sürükleme bittiğinde imleci tekrar değiştir
+        });
+    }
+
+    // Örnek kullanım
+    createCard('bir', '1.jpg', '2.jpg');
+</script>
+
+</body>
+</html>

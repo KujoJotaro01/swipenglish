@@ -14,7 +14,7 @@
         .card-container {
             height: 100vh;
             width: 100%;
-            flex-direction: column; /* Kartları alt alta sırala */
+            flex-direction: column;
             display:flex;
             justify-content: center;
             align-items: center;
@@ -33,7 +33,7 @@
             position: relative;
             perspective: 1000px;
             transition: transform 0.6s;
-            user-select: none; /* Prevent selection of the entire card */
+            user-select: none;
         }
 
         .card .back-image,
@@ -62,10 +62,9 @@
     </style>
 </head>
 <body>
-
-        <div id="cardContainer" class="card-container">
-            <!-- Cards will be added here -->
-        </div>
+    <div id="cardContainer" class="card-container">
+        <!-- Cards will be added here -->
+    </div>
 
     <script>
         function createCard(name, frontImageSrc, backImageSrc) {
@@ -135,16 +134,8 @@
         }
         createCard('bir', '1.jpg' , '2.jpg');
         createCard('iki', '3.jpg' , '4.jpg');
-        createCard('bir', '1.jpg' , '2.jpg');
-        createCard('iki', '3.jpg' , '4.jpg');
-        createCard('bir', '1.jpg' , '2.jpg');
-        createCard('iki', '3.jpg' , '4.jpg');
-        createCard('bir', '1.jpg' , '2.jpg');
-        createCard('iki', '3.jpg' , '4.jpg');
-        createCard('bir', '1.jpg' , '2.jpg');
-        createCard('iki', '3.jpg' , '4.jpg');
-        createCard('bir', '1.jpg' , '2.jpg');
-        createCard('iki', '3.jpg' , '4.jpg');
+        createCard('uc', '1.jpg' , '2.jpg');
+       
     </script>
 </body>
 </html>

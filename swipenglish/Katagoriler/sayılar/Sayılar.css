@@ -15,7 +15,7 @@ main {
     width: 100%;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    margin-top: -100px;
+    margin-top: -10px;
 }
 
 main > section {
@@ -64,7 +64,9 @@ main > section > div {
 .card.flipped .card-inner {
     transform: rotateY(180deg);
 }
-
+.card-back {
+    transform: rotateY(180deg);
+    }
 .card-front,
 .card-back {
     width: 100%;
@@ -88,9 +90,7 @@ pointer-events: none;
 user-select: none;
 }
 
-.card-back {
-transform: rotateY(180deg);
-}
+
 
 img {
 overflow: hidden;

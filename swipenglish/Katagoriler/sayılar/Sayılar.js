@@ -20,7 +20,13 @@ function setupDraggableCard(cardId, cardNumber) {
             const deltaX = (event.clientX || event.touches[0].clientX) - initialX;
             const deltaY = (event.clientY || event.touches[0].clientY) - initialY;
             const threshold = 60;
-
+    
+            // Check if the absolute deltaY is greater than the absolute deltaX
+            // If it is, ignore the drag event
+            if (Math.abs(deltaY) > Math.abs(deltaX)) {
+                return;
+            }
+    
             if (Math.abs(deltaX) > threshold || Math.abs(deltaY) > threshold) {
                 card.classList.toggle('flipped');
                 stopDragging();

@@ -35,13 +35,8 @@ function setupDraggableCard(cardId, cardNumber) {
     card.addEventListener('mousemove', handleDrag);
     card.addEventListener('touchmove', handleDrag);
 }
+
+/* js dosyasında değişiklik yapıcağınız tek yer*/ 
 setupDraggableCard('card', 1);
 setupDraggableCard('card2', 2);
 setupDraggableCard('card3', 3);
-setupDraggableCard('card4', 4);
-setupDraggableCard('card5', 5);
-setupDraggableCard('card6', 6);
-setupDraggableCard('card7', 7);
-setupDraggableCard('card8', 8);
-setupDraggableCard('card9', 9);
-setupDraggableCard('card10', 10);

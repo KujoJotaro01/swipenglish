@@ -34,13 +34,19 @@ button {
 
 .baslik {
     font-family: 'Dancing Script', cursive;
-    font-size: calc(30px + 2vw); /* Duyarlı başlık boyutu ayarı */
-    padding-bottom: 20px; /* Duyarlılık için gereken ayar */
-    margin-top: 0; /* Önceki margin-top sıfırlanıyor */
+    font-size: calc(30px + 1vw); /* Duyarlı başlık boyutu ayarı */
+    padding-bottom: 5px; /* Duyarlılık için gereken ayar */
+    margin-top: -30px; /* Önceki margin-top sıfırlanıyor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 600px) {
     .baslik {
-        font-size: 40px; /* Ekstra küçük ekranlar için başlık boyutu ayarı */
+        font-size: 35px; /* Ekstra küçük ekranlar için başlık boyutu ayarı */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

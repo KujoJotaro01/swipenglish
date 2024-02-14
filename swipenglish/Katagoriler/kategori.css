@@ -2,47 +2,45 @@
     text-align: center;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-button:active
-{
+button:active {
     box-shadow: none;
-    transform : translatey(5px);
+    transform: translatey(5px);
     background-color: #98eaa7;
-/* gölgenin açısına göre veya gölgenin üstüne çökmesi
-için güncellenebili*/
 }
 
 button:hover {
-    background-color: #CDFAD5;
+    background-color: #cdfad5;
 }
 
 button {
-width: 350px;
-height: 70px;
-color: rgb(2, 2, 2);
-background-color:#F8FF95;
-font-size: 18px;
-font-weight: bold;
-border-radius: 50px;
-cursor: pointer;
-border: 2px solid #000000;
-margin: 20px; 
-box-shadow:5px 8px 0px;
+    width: 350px;
+    height: 70px;
+    color: rgb(2, 2, 2);
+    background-color: #f8ff95;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid #000000;
+    margin: 20px auto;
+    box-shadow: 5px 8px 0px;
 }
 
 .baslik {
-    width:auto ;
-    height:110px;
     font-family: 'Dancing Script', cursive;
-    font-size:60px;
-    padding-bottom: 90px;
+    font-size: calc(30px + 2vw); /* Duyarlı başlık boyutu ayarı */
+    padding-bottom: 20px; /* Duyarlılık için gereken ayar */
+    margin-top: 0; /* Önceki margin-top sıfırlanıyor */
 }
 
-div{
-    display: block;
-    margin-top: -90px;}
+@media screen and (max-width: 600px) {
+    .baslik {
+        font-size: 40px; /* Ekstra küçük ekranlar için başlık boyutu ayarı */
+    }
+}

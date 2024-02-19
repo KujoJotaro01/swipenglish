@@ -7,17 +7,11 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
 button:active {
-    box-shadow: none;
-    transform: translatey(5px);
-    background-color: #98eaa7;
+    box-shadow: none; /* Buton tıklandığında gölgeyi kaldırır */
+    transform: translateY(5px); /* Buton tıklandığında aşağıya kaydırır (isteğe bağlı) */
+    background-color: #98eaa7; /* Buton tıklandığında arka plan rengini değiştirir */
 }
-
-button:hover {
-    background-color: #cdfad5;
-}
-
 button {
     width: 350px;
     height: 70px;
@@ -31,6 +25,15 @@ button {
     margin: 20px auto;
     box-shadow: 5px 8px 0px;
 }
+
+button:focus {
+    outline: none; /* Bu, butona odaklandığınızda veya tıkladığınızda varsayılan tarayıcı çerçevesini gizler */
+}
+
+*:focus {
+    outline: none !important;
+}
+
 
 .baslik {
     font-family: 'Dancing Script', cursive;

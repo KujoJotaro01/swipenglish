@@ -36,7 +36,7 @@ const questions = [
         ]
     }
 ];
-
+const questionnumElement = document.getElementById("question-num");
 const questionElement = document.getElementById("question");
 const answerButton = document.querySelector(".answer-buttons"); //chatgpt querySelector olarak düzeltti ve çalıştı. neden bilmiyorum
 const nextButton = document.getElementById("next-btn");
@@ -57,7 +57,8 @@ function showQuestion() {
 
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+    questionElement.innerHTML = currentQuestion.question;
+    questionnumElement.innerHTML = "Question " + questionNo + "/10";
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");

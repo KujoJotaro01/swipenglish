@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: "Muz",
+        question: "banana.png",
         answers: [
             {text: "Banana", correct: true},
             {text: "Apple", correct: false},
@@ -53,11 +53,11 @@ function startQuiz() {
 
 function showQuestion() {
     resetState();
-    /*answerButton.innerHTML = ""; //chatgpt ?*/
 
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = currentQuestion.question;
+    // Resmi göster
+    questionElement.innerHTML = `<img src="${currentQuestion.question}" alt="Question Image">`;
     questionnumElement.innerHTML = "Question " + questionNo + "/10";
 
     currentQuestion.answers.forEach(answer => {
@@ -71,6 +71,7 @@ function showQuestion() {
         button.addEventListener("click", selectAnswer);
     });
 }
+
 
 function resetState(){
     nextButton.style.display = "none";

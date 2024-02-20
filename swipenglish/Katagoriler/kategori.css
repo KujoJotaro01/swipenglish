@@ -54,3 +54,16 @@ button:focus {
         align-items: center;
     }
 }
+/* WebKit tabanlı tarayıcılarda */
+::-webkit-scrollbar {
+    width: 1px; /* Varsayılan scrollbar genişliği */
+    }
+    
+    ::-webkit-scrollbar-track {
+    background: transparent; /* Scrollbar arkaplanı */
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5); /* Scrollbar başlığı rengi ve opaklığı */
+    border-radius: 10px; /* Scrollbar başlığı köşe yarıçapı */
+    }

@@ -17,7 +17,7 @@ body {
 .app {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 40vh; /*web mobil boyutları ayrı ayarlancak*/
     background: #dddfeb;
     padding: 30px;
     overflow: hidden;
@@ -35,15 +35,15 @@ body {
     padding: 20px 0;
 }
 
-.quiz h2{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    
-}
 
 #question{
     /*buraya image cssleri gelecek*/
+    width: 100%;
+    height: 200px;
+    display: flex;
+    margin-bottom:30px;
+    justify-content: center;
+
 }
 
 .btn{

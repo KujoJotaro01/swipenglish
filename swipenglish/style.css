@@ -11,15 +11,14 @@
   border: 2px solid #000000;
   margin: 10px; /* Butonlar arasında boşluk bırakmak için */
   font-family:"Dancing Script";
-  box-shadow:5px 8px 0px
+  box-shadow:5px 8px 0px;
+  -webkit-tap-highlight-color: transparent;
 }
 .englishtoturkishbutton:active, .turkishtoenglishbutton:active, .quizbutton:active
 {
   box-shadow: none;
   transform : translatey(5px);
   background-color:#BC7AF9;
-  /* gölgenin açısına göre veya gölgenin üstüne çökmesi
-  için güncellenebilir*/
 }
 .turkishtoenglishbutton:hover, .quizbutton:hover, .englishtoturkishbutton:hover 
 {
@@ -47,13 +46,21 @@ body
 {
   margin: 0;
   padding: 0;
-  /* background-image: url(images/tema4.jpg);*/
   background-color: #a6ff96;
 }
 .baslik
 {
   font-family: "Dancing Script", cursive;
-  font-size: 45px;
+  font-size: calc(30px + 1vw); /* Duyarlı başlık boyutu ayarı */
   color: #57375D;
   margin-top: -90px;
+}
+
+@media screen and (max-width: 600px) {
+  .baslik {
+      font-size: 30px; /* Ekstra küçük ekranlar için başlık boyutu ayarı */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
 }

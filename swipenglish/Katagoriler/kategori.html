@@ -13,13 +13,9 @@
 
         <div class="container">
             <div class="baslik"><h1>Kategoriler</h1></div>
-        
+            <button class="MonthsDaysSeasonsbutton">Mevsimler Aylar Günler</button><br>
             <button class="numbersbutton">Sayılar</button><br>
-            <button class="monthsbutton">Aylar</button><br>
-            <button class="seasonsbutton">Mevsimler</button><br>
-            <button class="daysbuttonbutton">Günler</button><br>
             <button class="meyvelerbutton">Meyveler</button>
-
         </div>
 
     </body>
@@ -35,6 +31,11 @@
             document.querySelector(".meyvelerbutton").addEventListener("click", function() 
             {
                 window.location.href = "Meyveler/menchswipe.html";
+            });
+
+            document.querySelector(".MonthsDaysSeasonsbutton").addEventListener("click", function() 
+            {
+                window.location.href = "MonthsDaysSeasons/menchswipe.html";
             });
         };
     </script>

@@ -61,6 +61,21 @@ function setupDraggableCard(cardId) {
     card.addEventListener('mousemove', handleDrag);
     card.addEventListener('touchmove', handleDrag);
 }
-// Create cards
-createCard('card1', 'ananasBack.webp', 'ananasFront.webp');
-createCard('card2', 'appleBack.webp', 'appleFront.webp');
+// Create cards createCard('card', 'image/.webp', 'image/.webp');
+
+createCard('card1', 'images/autumnB.webp', 'images/autumnF.webp');
+createCard('card2', 'images/springB.webp', 'images/springF.webp');
+createCard('card3', 'images/summerB.webp', 'images/summerF.webp');
+createCard('card4', 'images/winterB.webp', 'images/winterF.webp');
+createCard('card5', 'images/ocakB.webp', 'images/ocakF.webp');
+createCard('card6', 'images/subatB.webp', 'images/subatF.webp');
+createCard('card7', 'images/martB.webp', 'images/martF.webp');
+createCard('card8', 'images/nisanB.webp', 'images/nisanF.webp');
+createCard('card9', 'images/mayısB.webp', 'images/mayısF.webp');
+createCard('card10', 'images/haziranB.webp', 'images/haziranF.webp');
+createCard('card11', 'images/temmuzB.webp', 'images/temmuzF.webp');
+createCard('card12', 'images/agustB.webp', 'images/agustF.webp');
+createCard('card13', 'images/eylulB.webp', 'images/eylulF.webp');
+createCard('card14', 'images/octoberB.webp', 'images/octoberF.webp');
+createCard('card15', 'images/kasımB.webp', 'images/kasımF.webp');
+createCard('card16', 'images/decB.webp', 'images/decF.webp');

@@ -12,21 +12,12 @@
     <body>
         <div class="container">
             <div class="baslik"><h1>Categories</h1></div>
-            <button class="randombutton">Random</button><br>
-            <button class="numbersbutton">Numbers</button><br>
-            <button class="objectsbutton">Objects</button><br>
-            <button class="monthsbutton">Months</button><br>
-            <button class="seasonsbutton">Seasons</button><br>
-            <button class="daysbuttonbutton">Days</button><br>
-            <button class="activitiesbutton">Activities</button><br>
-            <button class="animalsbutton">Animals</button><br>
-            <button class="foodsbutton">Foods</button><br>
-            <button class="drinksbutton">Drinks</button><br>
-            <button class="occupationsbutton">Occupations</button><br>
-            <button class="housebutton">Parts of the house</button><br>
-            <button class="emotionsbutton">Emotions</button><br>
-            <button class="spacebutton">Planets</button><br>
-            <button class="geographybutton">Geography</button>
+            
+            <button class="numbersbutton">Sayılar</button><br>
+            <button class="monthsbutton">Aylar</button><br>
+            <button class="seasonsbutton">Mevsimler</button><br>
+            <button class="daysbuttonbutton">Günler</button><br>
+            <button class="meyvelerbutton">Meyveler</button>
 
         </div>
 
@@ -37,14 +28,14 @@
         {
             document.querySelector(".numbersbutton").addEventListener("click", function() 
             {
-                window.location.href = "Sayılar/Sayılar.html";
+                window.location.href = "Sayılar/menchswipe.html";
+            });
+
+            document.querySelector(".meyvelerbutton").addEventListener("click", function() 
+            {
+                window.location.href = "Meyveler/menchswipe.html";
             });
         };
-        window.addEventListener('load', fg_load)
-    
-    function fg_load() {
-        document.getElementById('loading').style.display = 'none'
-    }
     </script>
 
 </html>

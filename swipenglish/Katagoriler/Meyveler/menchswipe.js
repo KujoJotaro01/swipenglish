@@ -62,15 +62,17 @@ function setupDraggableCard(cardId) {
     card.addEventListener('touchmove', handleDrag);
 }
 // Create cards createCard('card', 'image/.webp', 'image/.webp');
-createCard('card1', 'images/ananasBack.webp', 'images/ananasFront.webp');
+createCard('card1', 'images/ananasFront.webp', 'images/ananasBack.webp');
 createCard('card2', 'images/appleBack.webp', 'images/appleFront.webp');
-createCard('card3', 'images/bananaBack.webp', 'image/bananaFront.webp');
-createCard('card', 'images/cherryB.webp', 'image/.webp');
-createCard('card', 'images/.webp', 'image/.webp');
-createCard('card', 'images/.webp', 'image/.webp');
-createCard('card', 'images/.webp', 'image/.webp');
-createCard('card', 'images/.webp', 'image/.webp');
-createCard('card', 'images/.webp', 'image/.webp');
-createCard('card', 'images/.webp', 'image/.webp');
-createCard('card', 'images/ .webp', 'image/.webp');
-createCard('card', 'images/.webp', 'image/.webp');
+createCard('card3', 'images/bananaBack.webp', 'images/bananaFront.webp');
+createCard('card4', 'images/cherryB.webp', 'images/cherryF.webp');
+createCard('card5', 'images/cilekArka.webp', 'images/cilekOn.webp');
+createCard('card6', 'images/grapeF.webp', 'images/grapeB.webp');
+createCard('card7', 'images/melonB.webp', 'images/melonF.webp');
+createCard('card8', 'images/orangeBack.webp', 'images/orangeFront.webp');
+createCard('card9', 'images/armutF.webp', 'images/armutB.webp');
+createCard('card10', 'images/garbuzB.webp', 'images/garbuzF.webp');
+createCard('card11', 'images/kayısıB.webp', 'images/kayısıF.webp');
+createCard('card12', 'images/peachB.webp', 'images/peachF.webp');
+createCard('card13', 'images/kiviF.webp', 'images/kiviB.webp');
+//...........................

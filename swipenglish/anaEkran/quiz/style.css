@@ -11,14 +11,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #1f2847;
+    background: #FF8080
   }
 
 .app {
     position: relative;
     width: 100%;
     max-width: 40vh; /*web mobil boyutları ayrı ayarlancak*/
-    background: #dddfeb;
+    background: #F6FDC3;
     padding: 30px;
     overflow: hidden;
     border-radius: 10px;
@@ -47,7 +47,7 @@ body {
 }
 
 .btn{
-    background: #dddfeb;
+    background: #7BD3EA;
     color: #222;
     font-size: 18px;
     font-weight: 600;
@@ -66,8 +66,8 @@ body {
 }
 
 .btn:hover:not([disabled]){
-    background: #3e4f8c;
-    color: #fff;
+    background: #C5FFF8;
+    /*color: #fff;*/
 }
 
 #next-btn{

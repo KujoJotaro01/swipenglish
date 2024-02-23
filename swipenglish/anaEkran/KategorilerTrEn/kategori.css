@@ -1,0 +1,69 @@
+.container {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button:active {
+    box-shadow: none; /* Buton tıklandığında gölgeyi kaldırır */
+    transform: translateY(5px); /* Buton tıklandığında aşağıya kaydırır (isteğe bağlı) */
+    background-color: #98eaa7; /* Buton tıklandığında arka plan rengini değiştirir */
+}
+button {
+    width: 350px;
+    height: 70px;
+    color: rgb(2, 2, 2);
+    background-color: #f8ff95;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid #000000;
+    margin: 20px auto;
+    box-shadow: 5px 8px 0px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:focus {
+    outline: none; /* Bu, butona odaklandığınızda veya tıkladığınızda varsayılan tarayıcı çerçevesini gizler */
+}
+
+*:focus {
+    outline: none !important;
+}
+
+
+.baslik {
+    font-family: 'Dancing Script', cursive;
+    font-size: calc(30px + 1vw); /* Duyarlı başlık boyutu ayarı */
+    padding-bottom: 5px; /* Duyarlılık için gereken ayar */
+    margin-top: -30px; /* Önceki margin-top sıfırlanıyor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .baslik {
+        font-size: 35px; /* Ekstra küçük ekranlar için başlık boyutu ayarı */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* WebKit tabanlı tarayıcılarda */
+::-webkit-scrollbar {
+    width: 1px; /* Varsayılan scrollbar genişliği */
+    }
+    
+    ::-webkit-scrollbar-track {
+    background: transparent; /* Scrollbar arkaplanı */
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5); /* Scrollbar başlığı rengi ve opaklığı */
+    border-radius: 10px; /* Scrollbar başlığı köşe yarıçapı */
+    }

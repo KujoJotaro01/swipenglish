@@ -61,7 +61,7 @@ function setupDraggableCard(cardId) {
     card.addEventListener('mousemove', handleDrag);
     card.addEventListener('touchmove', handleDrag);
 }
-// Create cards // Create cards  createCard('card', 'image/.webp', 'image/.webp');
+// Create cards createCard('card', 'image/.webp', 'image/.webp');
 
-createCard('card1', 'ananasBack.webp', 'ananasFront.webp');
-createCard('card2', 'appleBack.webp', 'appleFront.webp');
+createCard('card1', 'Back.webp', 'Front.webp');
+createCard('card2', 'Back.webp', 'Front.webp');

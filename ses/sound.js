@@ -30,21 +30,7 @@ function playSound(id) {
     sound.play();
 }
 
-// CSS Kodlarını Eklemek İçin
 const style = document.createElement('style');
-style.innerHTML = `
-
-.card-inner {
-    position: relative;
-
-}
-
-.card-inner button {
-    position: absolute;
-    top: 400px;
-    right: 110px;
-}
-`;
 
 document.head.appendChild(style);
 
@@ -94,5 +80,5 @@ function setupDraggableCard(cardId) {
 // Create cards // Create cards  createCard('card', 'image/.webp', 'image/.webp');
 
 createCard('card1', 'ananasBack.webp', 'ananasFront.webp', 'uc.mp3');
-createCard('card2', 'appleBack.webp', 'appleFront.webp', 'uc.mp3');
+createCard('card2', 'ananasBack.webp', 'ananasBack.webp', 'uc.mp3');
 

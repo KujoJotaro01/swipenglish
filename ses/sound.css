@@ -107,6 +107,8 @@ background: rgba(0, 0, 0, 0.5); /* Scrollbar başlığı rengi ve opaklığı */
 border-radius: 10px; /* Scrollbar başlığı köşe yarıçapı */
 }
 
+
+/*burdan itibaren kart ve sound img ayarlarını yapıcaz*/
 .sound{
     overflow: hidden;
     border-radius: 16px;
@@ -124,4 +126,16 @@ border-radius: 10px; /* Scrollbar başlığı köşe yarıçapı */
     justify-content: center; /* Yatayda hizalama */
     align-items: flex-start; /* Dikeyde hizalama */
     margin-top: 100px; /* Opsiyonel: İstediğiniz boşluk için */
+}
+.card-inner {
+    position: relative;
+}
+.card-inner button {
+    position: absolute;
+    top: 400px;
+    right: 110px;
+}
+.sound img {
+    user-select: none; /* Resmin seçilemez olmasını sağlar */
+    pointer-events: none; /* buton içindeki image'in seçilip sürüklenebilirliğini kaldırırıyor */
 }

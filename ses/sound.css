@@ -9,7 +9,6 @@ body {
     justify-content: center;
     height: 100vh;
     -webkit-tap-highlight-color: transparent;
-
 }
 
 main {
@@ -17,7 +16,6 @@ main {
     width: 100%;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    margin-top: -10px;
 }
 
 main > section {
@@ -36,14 +34,11 @@ main > section > div {
     color: #fff;
 }
 
-.container {
-    margin-top: 10px;
-}
-
 .card {
-    width: 350px;
-    height: 300px;
+    width: 45vh; 
+    height: 45vh; 
     perspective: 1000px;
+    margin-top: 22vh;
 }
 
 .card-inner {
@@ -60,9 +55,11 @@ main > section > div {
 .card.flipped .card-inner {
     transform: rotateY(180deg);
 }
+
 .card-back {
     transform: rotateY(180deg);
-    }
+}
+
 .card-front,
 .card-back {
     width: 100%;
@@ -86,8 +83,6 @@ pointer-events: none;
 user-select: none;
 }
 
-
-
 img {
 overflow: hidden;
 border-radius: 16px;
@@ -107,33 +102,25 @@ background: rgba(0, 0, 0, 0.5); /* Scrollbar başlığı rengi ve opaklığı */
 border-radius: 10px; /* Scrollbar başlığı köşe yarıçapı */
 }
 
-
 /*burdan itibaren kart ve sound img ayarlarını yapıcaz*/
 .sound{
     overflow: hidden;
     border-radius: 16px;
     user-select: none;
     text-align: center;
-    top: 300px;
     display: flex;
     justify-content: center;
     background-color: #a6ff96;
     border: none; /* Butonun kenarlık (border) özelliğini kaldırır */
+    margin-top: 15vh; /* Opsiyonel: İstediğiniz boşluk için */
     outline: none; /* Buton tıklandığında veya odaklandığında kenarlık (outline) özelliğini kaldırır */
+    width: 10vh;
+    height: 10vh;
 }
 .sound-container {
     display: flex;
     justify-content: center; /* Yatayda hizalama */
     align-items: flex-start; /* Dikeyde hizalama */
-    margin-top: 100px; /* Opsiyonel: İstediğiniz boşluk için */
-}
-.card-inner {
-    position: relative;
-}
-.card-inner button {
-    position: absolute;
-    top: 400px;
-    right: 110px;
 }
 .sound img {
     user-select: none; /* Resmin seçilemez olmasını sağlar */

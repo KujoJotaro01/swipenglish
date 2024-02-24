@@ -15,7 +15,7 @@ function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
     <div class="sound-container">
         <audio id="sound_${id}" src="${soundSrc}"></audio>
         <button class="sound" onclick="playSound('${id}')">
-            <img src="icons8-sound-100.png" alt="Play Sound">
+            <img src="sound.png" alt="Play Sound">
         </button>
     </div>
 </div>
@@ -77,8 +77,8 @@ function setupDraggableCard(cardId) {
     card.addEventListener('mousemove', handleDrag);
     card.addEventListener('touchmove', handleDrag);
 }
-// Create cards // Create cards  createCard('card', 'image/.webp', 'image/.webp');
+// Create cards // Create cards  createCard('card', 'image/.webp', 'image/.webp', '.mp3');
 
-createCard('card1', 'ananasBack.webp', 'ananasFront.webp', 'uc.mp3');
-createCard('card2', 'ananasBack.webp', 'ananasBack.webp', 'uc.mp3');
+createCard('card1', '.webp', '.webp', '.mp3');
+createCard('card2', '.webp', '.webp', '.mp3');
 

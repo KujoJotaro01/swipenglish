@@ -77,8 +77,8 @@ function setupDraggableCard(cardId) {
     card.addEventListener('mousemove', handleDrag);
     card.addEventListener('touchmove', handleDrag);
 }
-// Create cards // Create cards  createCard('card', 'image/.webp', 'image/.webp', '.mp3');
+// Create cards // Create cards  createCard('card', 'image/.webp', 'image/.webp', 'sound/.mp3');
 
-createCard('card1', '.webp', '.webp', '.mp3');
-createCard('card2', '.webp', '.webp', '.mp3');
+createCard('card1', 'images/.webp', 'sound/.webp', '.mp3');
+createCard('card2', 'images/.webp', 'sound/.webp', '.mp3');
 

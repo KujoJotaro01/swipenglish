@@ -1,22 +1,38 @@
-function createCard(id, frontImageSrc, backImageSrc) {
+function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
     const section = document.createElement('section');
     section.innerHTML = `
-        <div>
-            <div class="card" id="${id}" onmousedown="startDragging(event, ${id})" onmouseup="stopDragging(${id})">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <img loading="eager" src="${frontImageSrc}">
-                    </div>
-                    <div class="card-back">
-                        <img loading="eager" src="${backImageSrc}">
-                    </div>
-                </div>
+    <div>
+    <div class="card" id="${id}" onmousedown="startDragging(event, '${id}')" onmouseup="stopDragging('${id}')">
+        <div class="card-inner">
+            <div class="card-front">
+                <img loading="eager" src="${frontImageSrc}">
+            </div>
+            <div class="card-back">
+                <img loading="eager" src="${backImageSrc}">
             </div>
         </div>
-    `;
+    </div>
+    <div class="sound-container">
+        <audio id="sound_${id}" src="${soundSrc}"></audio>
+        <button class="sound" onclick="playSound('${id}')">
+            <img src="images/sound.png" alt="Play Sound">
+        </button>
+    </div>
+</div>
+`;
     document.getElementById('main-container').appendChild(section);
     setupDraggableCard(id);
 }
+
+
+function playSound(id) {
+    const sound = document.getElementById(`sound_${id}`);
+    sound.play();
+}
+
+const style = document.createElement('style');
+
+document.head.appendChild(style);
 
 function setupDraggableCard(cardId) {
     let isDragging = false;
@@ -61,7 +77,8 @@ function setupDraggableCard(cardId) {
     card.addEventListener('mousemove', handleDrag);
     card.addEventListener('touchmove', handleDrag);
 }
-// Create cards createCard('card', 'image/.webp', 'image/.webp');
+// Create cards // Create cards  createCard('card', 'image/.webp', 'image/.webp', '.mp3');
 
-createCard('card1', 'Back.webp', 'Front.webp');
-createCard('card2', 'Back.webp', 'Front.webp');
+createCard('card1', '.webp', '.webp', '.mp3');
+createCard('card2', '.webp', '.webp', '.mp3');
+

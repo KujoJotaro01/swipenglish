@@ -15,7 +15,7 @@ function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
     <div class="sound-container">
         <audio id="sound_${id}" src="${soundSrc}"></audio>
         <button class="sound" onclick="playSound('${id}')">
-            <img src="sound.png" alt="Play Sound">
+            <img src="images/sound.png" alt="Play Sound">
         </button>
     </div>
 </div>
@@ -79,6 +79,13 @@ function setupDraggableCard(cardId) {
 }
 // Create cards // Create cards  createCard('card', 'image/.webp', 'image/.webp', '.mp3');
 
-createCard('card1', '.webp', '.webp', '.mp3');
-createCard('card2', '.webp', '.webp', '.mp3');
-
+createCard('card1', 'images/cloudyB.webp', 'images/cloudyF.webp', '.mp3');
+createCard('card2', 'images/foggyB.webp', 'images/foggyF.webp', '.mp3');
+createCard('card3', 'images/partlycloudyB.webp', 'images/partlycloudyF.webp', '.mp3');
+createCard('card4', 'images/rainbowB.webp', 'images/rainbowF.webp', '.mp3');
+createCard('card5', 'images/rainyB.webp', 'images/rainyF.webp', '.mp3');
+createCard('card6', 'images/snowyB.webp', 'images/snowyF.webp', '.mp3');
+createCard('card7', 'images/stormyB.webp', 'images/stormyF.webp', '.mp3');
+createCard('card8', 'images/sunnyB.webp', 'images/sunnyF.webp', '.mp3');
+createCard('card9', 'images/tornadoB.webp', 'images/tornadoF.webp', '.mp3');
+createCard('card10', 'images/windyB.webp', 'images/windyF.webp', '.mp3');

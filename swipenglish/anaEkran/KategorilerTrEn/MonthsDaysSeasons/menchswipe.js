@@ -1,22 +1,38 @@
-function createCard(id, frontImageSrc, backImageSrc) {
+function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
     const section = document.createElement('section');
     section.innerHTML = `
-        <div>
-            <div class="card" id="${id}" onmousedown="startDragging(event, ${id})" onmouseup="stopDragging(${id})">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <img loading="eager" src="${frontImageSrc}">
-                    </div>
-                    <div class="card-back">
-                        <img loading="eager" src="${backImageSrc}">
-                    </div>
-                </div>
+    <div>
+    <div class="card" id="${id}" onmousedown="startDragging(event, '${id}')" onmouseup="stopDragging('${id}')">
+        <div class="card-inner">
+            <div class="card-front">
+                <img loading="eager" src="${frontImageSrc}">
+            </div>
+            <div class="card-back">
+                <img loading="eager" src="${backImageSrc}">
             </div>
         </div>
-    `;
+    </div>
+    <div class="sound-container">
+        <audio id="sound_${id}" src="${soundSrc}"></audio>
+        <button class="sound" onclick="playSound('${id}')">
+            <img src="images/sound.png" alt="Play Sound">
+        </button>
+    </div>
+</div>
+`;
     document.getElementById('main-container').appendChild(section);
     setupDraggableCard(id);
 }
+
+
+function playSound(id) {
+    const sound = document.getElementById(`sound_${id}`);
+    sound.play();
+}
+
+const style = document.createElement('style');
+
+document.head.appendChild(style);
 
 function setupDraggableCard(cardId) {
     let isDragging = false;
@@ -61,21 +77,21 @@ function setupDraggableCard(cardId) {
     card.addEventListener('mousemove', handleDrag);
     card.addEventListener('touchmove', handleDrag);
 }
-// Create cards createCard('card', 'image/.webp', 'image/.webp');
+// Create cards createCard('card', 'image/.webp', 'image/.webp' ,'.mp3');
 
-createCard('card1', 'images/autumnB.webp', 'images/autumnF.webp');
-createCard('card2', 'images/springB.webp', 'images/springF.webp');
-createCard('card3', 'images/summerB.webp', 'images/summerF.webp');
-createCard('card4', 'images/winterB.webp', 'images/winterF.webp');
-createCard('card5', 'images/ocakB.webp', 'images/ocakF.webp');
-createCard('card6', 'images/subatB.webp', 'images/subatF.webp');
-createCard('card7', 'images/martB.webp', 'images/martF.webp');
-createCard('card8', 'images/nisanB.webp', 'images/nisanF.webp');
-createCard('card9', 'images/mayısB.webp', 'images/mayısF.webp');
-createCard('card10', 'images/haziranB.webp', 'images/haziranF.webp');
-createCard('card11', 'images/temmuzB.webp', 'images/temmuzF.webp');
-createCard('card12', 'images/agustB.webp', 'images/agustF.webp');
-createCard('card13', 'images/eylulB.webp', 'images/eylulF.webp');
-createCard('card14', 'images/octoberB.webp', 'images/octoberF.webp');
-createCard('card15', 'images/kasımB.webp', 'images/kasımF.webp');
-createCard('card16', 'images/decB.webp', 'images/decF.webp');
+createCard('card1', 'images/autumnF.webp', 'images/autumnB.webp');
+createCard('card2', 'images/springF.webp', 'images/springB.webp');
+createCard('card3', 'images/summerF.webp', 'images/summerB.webp');
+createCard('card4', 'images/winterF.webp', 'images/winterB.webp');
+createCard('card5', 'images/ocakF.webp', 'images/ocakB.webp');
+createCard('card6', 'images/subatF.webp', 'images/subatB.webp');
+createCard('card7', 'images/martF.webp', 'images/martB.webp');
+createCard('card8', 'images/nisanF.webp', 'images/nisanB.webp');
+createCard('card9', 'images/mayısF.webp', 'images/mayısB.webp');
+createCard('card10', 'images/haziranF.webp', 'images/haziranB.webp');
+createCard('card11', 'images/temmuzF.webp', 'images/temmuzB.webp');
+createCard('card12', 'images/agustF.webp', 'images/agustB.webp');
+createCard('card13', 'images/eylulF.webp', 'images/eylulB.webp');
+createCard('card14', 'images/octoberF.webp', 'images/octoberB.webp');
+createCard('card15', 'images/kasımF.webp', 'images/kasımB.webp');
+createCard('card16', 'images/decF.webp', 'images/decB.webp');

@@ -46,6 +46,7 @@ main > section > div {
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.5s;
+    margin-top: -14.5vh;
 }
 
 .card.dragging .card-inner {

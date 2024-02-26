@@ -112,7 +112,7 @@ border-radius: 10px; /* Scrollbar başlığı köşe yarıçapı */
     justify-content: center;
     background-color: #a6ff96;
     border: none; /* Butonun kenarlık (border) özelliğini kaldırır */
-    margin-top: 15vh; /* Opsiyonel: İstediğiniz boşluk için */
+    margin-top: 10vh; /* Opsiyonel: İstediğiniz boşluk için */
     outline: none; /* Buton tıklandığında veya odaklandığında kenarlık (outline) özelliğini kaldırır */
     width: 10vh;
     height: 10vh;

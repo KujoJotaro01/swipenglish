@@ -12,10 +12,8 @@
     <body>
         <div class="container">
             <div class="baslik"><h1>Categories</h1></div>
-            
-            <button class="numbersbutton">Sayılar</button><br>
-            <button class="MonthsDaysSeasonsbutton">Months Days Seasons</button><br>
-            <button class="meyvelerbutton">Meyveler</button>
+            <button class="havaDurumubutton">Weather</button><br>
+            <button class="monthsbutton">Months</button>
 
         </div>
 
@@ -24,19 +22,15 @@
     <script>
         window.onload = function() 
         {
-            document.querySelector(".numbersbutton").addEventListener("click", function() 
+            
+            document.querySelector(".havaDurumubutton").addEventListener("click", function() 
             {
-                window.location.href = "Sayılar/menchswipe.html";
+                window.location.href = "havaDurumu/menchswipe.html";
             });
 
-            document.querySelector(".meyvelerbutton").addEventListener("click", function() 
+            document.querySelector(".monthsbutton").addEventListener("click", function() 
             {
-                window.location.href = "Meyveler/menchswipe.html";
-            });
-
-            document.querySelector(".MonthsDaysSeasonsbutton").addEventListener("click", function() 
-            {
-                window.location.href = "MonthsDaysSeasons/menchswipe.html";
+                window.location.href = "Months/menchswipe.html";//
             });
         };
     </script>

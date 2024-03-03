@@ -1,4 +1,4 @@
-function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
+function createCard(id, backImageSrc, frontImageSrc, soundSrc) {
     const section = document.createElement('section');
     section.innerHTML = `
     <div>
@@ -15,7 +15,7 @@ function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
     <div class="sound-container">
         <audio id="sound_${id}" src="${soundSrc}"></audio>
         <button class="sound" onclick="playSound('${id}')">
-            <img src="image/sound.png" alt="Play Sound">
+            <img src="images/sound.png" alt="Play Sound">
         </button>
     </div>
 </div>
@@ -75,18 +75,20 @@ function setupDraggableCard(cardId) {
     card.addEventListener('touchstart', startDragging);
     card.addEventListener('touchend', stopDragging);
     card.addEventListener('mousemove', handleDrag);
+    card.addEventListener('touchmove', handleDrag);
 }
+// Create cards : createCard('card', 'images/.webp', 'images/.webp' , '.mp3');
 
-// Create cards  createCard('card', 'image/.webp', 'image/.webp');
-
-createCard('card1', 'image/zeroB.webp', 'image/zeroF.webp' , 'sound/sifir.mp3');
-createCard('card2', 'image/oneB.webp', 'image/oneF.webp' ,'sound/bir.mp3');
-createCard('card3', 'image/twoB.webp', 'image/twoF.webp','sound/iki.mp3');
-createCard('card4','image/threeB.webp','image/threeF.webp','sound/uc.mp3')
-createCard('card5', 'image/fourB.webp', 'image/fourF.webp','sound/dort.mp3');
-createCard('card6', 'image/fiveB.webp', 'image/fiveF.webp','sound/bes.mp3'); 
-createCard('card7', 'image/sixB.webp', 'image/sixF.webp','sound/alti.mp3');
-createCard('card8', 'image/sevenB.webp', 'image/sevenF.webp','sound/yedi.mp3');
-createCard('card9', 'image/eightB.webp', 'image/eightF.webp','sound/sekiz.mp3');
-createCard('card10', 'image/nineB.webp', 'image/nineF.webp','sound/dokuz.mp3');
-createCard('card11', 'image/tenB.webp', 'image/tenF.webp','sound/on.mp3');
+createCard('card1', 'images/ananasFront.webp', 'images/ananasBack.webp', 'sound/ananas.mp3');
+createCard('card2', 'images/appleBack.webp', 'images/appleFront.webp', 'sound/elma.mp3');
+createCard('card3', 'images/armutF.webp', 'images/armutB.webp', 'sound/armut.mp3');
+createCard('card4', 'images/bananaBack.webp', 'images/bananaFront.webp' , 'sound/muz.mp3');
+createCard('card5', 'images/cherryB.webp', 'images/cherryF.webp' , 'sound/kiraz.mp3');
+createCard('card6', 'images/cilekArka.webp', 'images/cilekOn.webp' , 'sound/cilek.mp3');
+createCard('card7', 'images/garbuzB.webp', 'images/garbuzF.webp' , 'sound/karpuz.mp3');
+createCard('card8', 'images/grapeF.webp', 'images/grapeB.webp' , 'sound/.mp3');
+createCard('card9', 'images/kayısıB.webp', 'images/kayısıF.webp' , 'sound/kayisi.mp3');
+createCard('card10', 'images/kiviF.webp', 'images/kiviB.webp' , 'sound/kivi.mp3');
+createCard('card11', 'images/melonB.webp', 'images/melonF.webp' , 'sound/kavun.mp3');
+createCard('card12', 'images/orangeBack.webp', 'images/orangeFront.webp' , 'sound/.mp3');
+createCard('card', 'images/peachB.webp', 'images/peachF.webp' , 'sound/seftali.mp3');

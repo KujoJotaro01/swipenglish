@@ -12,11 +12,11 @@
     <body>
         <div class="container">
             <div class="baslik"><h1>Categories</h1></div>
+            <button class="monthsbutton">Months</button><br>
+            <button class="numbersbutton">Numbers</button><br>
+            <button class="meyvelersbutton">Fruits</button>
             <button class="havaDurumubutton">Weather</button><br>
-            <button class="monthsbutton">Months</button>
-
         </div>
-
     </body>
 
     <script>
@@ -31,6 +31,16 @@
             document.querySelector(".monthsbutton").addEventListener("click", function() 
             {
                 window.location.href = "Months/menchswipe.html";//
+            });
+
+            document.querySelector(".numbersbutton").addEventListener("click", function() 
+            {
+                window.location.href = "Sayılar/menchswipe.html";//
+            });
+
+            document.querySelector(".meyvelersbutton").addEventListener("click", function() 
+            {
+                window.location.href = "Meyveler/menchswipe.html";//
             });
         };
     </script>

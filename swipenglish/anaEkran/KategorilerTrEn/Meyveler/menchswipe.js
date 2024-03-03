@@ -79,16 +79,16 @@ function setupDraggableCard(cardId) {
 }
 // Create cards : createCard('card', 'images/.webp', 'images/.webp' , '.mp3');
 
-createCard('card1', 'images/ananasFront.webp', 'images/ananasBack.webp', '.mp3');
-createCard('card2', 'images/appleBack.webp', 'images/appleFront.webp', '.mp3');
-createCard('card3', 'images/armutF.webp', 'images/armutB.webp', '.mp3');
-createCard('card4', 'images/bananaBack.webp', 'images/bananaFront.webp' , '.mp3');
-createCard('card5', 'images/cherryB.webp', 'images/cherryF.webp' , '.mp3');
-createCard('card6', 'images/cilekArka.webp', 'images/cilekOn.webp' , '.mp3');
-createCard('card7', 'images/garbuzB.webp', 'images/garbuzF.webp' , '.mp3');
-createCard('card8', 'images/grapeF.webp', 'images/grapeB.webp' , '.mp3');
-createCard('card9', 'images/kayısıB.webp', 'images/kayısıF.webp' , '.mp3');
-createCard('card10', 'images/kiviF.webp', 'images/kiviB.webp' , '.mp3');
-createCard('card11', 'images/melonB.webp', 'images/melonF.webp' , '.mp3');
-createCard('card12', 'images/orangeBack.webp', 'images/orangeFront.webp' , '.mp3');
-createCard('card', 'images/peachB.webp', 'images/peachF.webp' , '.mp3');
+createCard('card1', 'images/ananasFront.webp', 'images/ananasBack.webp', 'sound/ananas.mp3');
+createCard('card2', 'images/appleBack.webp', 'images/appleFront.webp', 'sound/elma.mp3');
+createCard('card3', 'images/armutF.webp', 'images/armutB.webp', 'sound/armut.mp3');
+createCard('card4', 'images/bananaBack.webp', 'images/bananaFront.webp' , 'sound/muz.mp3');
+createCard('card5', 'images/cherryB.webp', 'images/cherryF.webp' , 'sound/kiraz.mp3');
+createCard('card6', 'images/cilekArka.webp', 'images/cilekOn.webp' , 'sound/cilek.mp3');
+createCard('card7', 'images/garbuzB.webp', 'images/garbuzF.webp' , 'sound/karpuz.mp3');
+createCard('card8', 'images/grapeF.webp', 'images/grapeB.webp' , 'sound/.mp3');
+createCard('card9', 'images/kayısıB.webp', 'images/kayısıF.webp' , 'sound/kayisi.mp3');
+createCard('card10', 'images/kiviF.webp', 'images/kiviB.webp' , 'sound/kivi.mp3');
+createCard('card11', 'images/melonB.webp', 'images/melonF.webp' , 'sound/kavun.mp3');
+createCard('card12', 'images/orangeBack.webp', 'images/orangeFront.webp' , 'sound/.mp3');
+createCard('card', 'images/peachB.webp', 'images/peachF.webp' , 'sound/seftali.mp3');

@@ -1,4 +1,4 @@
-function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
+function createCard(id, backImageSrc, frontImageSrc, soundSrc) {
     const section = document.createElement('section');
     section.innerHTML = `
     <div>

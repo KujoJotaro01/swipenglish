@@ -2,43 +2,18 @@ const questions = [
     {
         question: "banana.png",
         answers: [
-            {text: "Banana", correct: true},
-            {text: "Apple", correct: false},
-            {text: "Peach", correct: false},
-            {text: "Orange", correct: false},
+            {text: "Banana", word: "banana.mp3", correct: true},
+            {text: "Apple", word: "apple.mp3", correct: false},
+            {text: "Peach", word: "peach.mp3", correct: false},
+            {text: "Orange", word: "orange.mp3", correct: false},
         ]
     },
-    {
-        question: "Elma",
-        answers: [
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: true},
-            {text: "Peach", correct: false},
-            {text: "Orange", correct: false},
-        ]
-    },
-    {
-    question: "Şeftali",
-        answers: [
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: false},
-            {text: "Peach", correct: true},
-            {text: "Orange", correct: false},
-        ]
-    },
-    {
-    question: "Portakal",
-        answers: [
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: false},
-            {text: "Peach", correct: false},
-            {text: "Orange", correct: true},
-        ]
-    }
+    // Diğer sorular...
 ];
+
 const questionnumElement = document.getElementById("question-num");
 const questionElement = document.getElementById("question");
-const answerButton = document.querySelector(".answer-buttons"); //chatgpt querySelector olarak düzeltti ve çalıştı. neden bilmiyorum
+const answerButtonContainer = document.querySelector(".answer-buttons"); 
 const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0;
@@ -56,27 +31,43 @@ function showQuestion() {
 
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
+    
     // Resmi göster
     questionElement.innerHTML = `<img src="${currentQuestion.question}" alt="Question Image">`;
     questionnumElement.innerHTML = "Question " + questionNo + "/10";
 
     currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
-        button.innerHTML = answer.text;
-        button.classList.add("btn");
-        answerButton.appendChild(button);
+        const answerButton = document.createElement("button");
+        answerButton.innerHTML = answer.text;
+        answerButton.classList.add("btn");
+        
+        const audioButton = document.createElement("button");
+        audioButton.innerHTML = "<img src='sound.png' alt='Audio Icon'>";
+        audioButton.classList.add("audio-btn");
+
+        
+        const audio = new Audio(answer.word);
+        
+        audioButton.addEventListener("click", (event) => {
+            event.stopPropagation(); // Butona tıklandığında answer butonuna tıklanmaması için
+            audio.play();
+        });
+        
+        answerButton.appendChild(audioButton);
+        answerButtonContainer.appendChild(answerButton);
+
         if(answer.correct){
-            button.dataset.correct = answer.correct;
+            answerButton.dataset.correct = answer.correct;
         }
-        button.addEventListener("click", selectAnswer);
+        
+        answerButton.addEventListener("click", selectAnswer);
     });
 }
 
-
 function resetState(){
     nextButton.style.display = "none";
-    while(answerButton.firstChild){
-        answerButton.removeChild(answerButton.firstChild);
+    while(answerButtonContainer.firstChild){
+        answerButtonContainer.removeChild(answerButtonContainer.firstChild);
     }
 }
 
@@ -91,7 +82,7 @@ function selectAnswer(e){
     else{
         selectedBtn.classList.add("incorrect");
     }
-    Array.from(answerButton.children).forEach(button => {
+    Array.from(answerButtonContainer.children).forEach(button => {
         if(button.dataset.correct === "true"){
             button.classList.add("correct");
         }

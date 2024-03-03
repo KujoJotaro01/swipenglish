@@ -104,3 +104,16 @@ body {
     border-color: #fc3939;
     background: #ff9393;
 }
+
+.audio-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 180px;
+    position: absolute;
+}
+
+.audio-btn img {
+    width: 27px; /* veya istediğiniz boyut */
+    height: 27px; /* veya istediğiniz boyut */
+}

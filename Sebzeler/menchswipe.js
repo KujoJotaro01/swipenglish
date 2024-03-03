@@ -79,15 +79,16 @@ function setupDraggableCard(cardId) {
 }
 // Create cards // Create cards  createCard('card', 'image/.webp', 'image/.webp', 'sound/.mp3');
 
-createCard('card1', 'images/dunyaB.webp', 'images/dunyaF.webp', 'sound/dunya.mp3');
-createCard('card2', 'images/ayB.webp', 'images/ayF.webp', 'sound/.mp3');
-createCard('card3', 'images/gunesB.webp', 'images/gunesF.webp', 'sound/gunes.mp3');
-createCard('card4', 'images/jupiterB.webp', 'images/jupiterF.webp', 'sound/jupiter.mp3');
-createCard('card5', 'images/mars.webp', 'images/mars.webp', 'sound/mars.mp3');
-createCard('card6', 'images/merkurB.webp', 'images/merkurF.webp', 'sound/merkur.mp3');
-createCard('card7', 'images/neptunB.webp', 'images/neptunF.webp', 'sound/neptun.mp3');
-createCard('card8', 'images/plutoB.webp', 'images/plutoF.webp', '.mp3');
-createCard('card9', 'images/saturnB.webp', 'images/saturnF.webp', 'sound/saturn.mp3');
-createCard('card10', 'images/uranusB.webp', 'images/uranusF.webp', 'sound/uranus.mp3');
-createCard('card11', 'images/venusB.webp', 'images/venusF.webp', 'sound/venus.mp3');
-
+createCard('card1', 'images/acibiberB.webp', 'images/acibiberF.webp', 'sound/.mp3');
+createCard('card2', 'images/balkabagF.webp', 'images/balkabagB.webp', 'sound/.mp3');
+createCard('card3', 'images/brokoliF.webp', 'images/brokoliB.webp', 'sound/.mp3');
+createCard('card4', 'images/domatesB.webp', 'images/domatesF.webp', 'sound/domates.mp3');
+createCard('card5', 'images/kabakB.webp', 'images/kabakF.webp', 'sound/.mp3');
+createCard('card6', 'images/karnabaharF.webp', 'images/karnabaharB.webp', 'sound/.mp3');
+createCard('card7', 'images/mantarB.webp', 'images/mantarF.webp', 'sound/.mp3');
+createCard('card8', 'images/misirF.webp', 'images/misirB.webp', 'sound/.mp3');
+createCard('card9', 'images/patatesF.webp', 'images/patatesB.webp', 'sound/patates.mp3');
+createCard('card10', 'images/patlcanF.webp', 'images/patlcanF.webp', 'sound/.mp3');
+createCard('card11', 'images/salatalkB.webp', 'images/salatalkF.webp', 'sound/salatalik.mp3');
+createCard('card12', 'images/sarmsakB.webp', 'images/sarmsakF.webp', 'sound/.mp3');
+createCard('card13', 'images/havucB.webp', 'images/havucF.webp', 'sound/havuc.mp3');

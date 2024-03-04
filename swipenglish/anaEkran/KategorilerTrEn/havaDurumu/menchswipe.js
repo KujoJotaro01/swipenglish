@@ -15,7 +15,7 @@ function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
     <div class="sound-container">
         <audio id="sound_${id}" src="${soundSrc}"></audio>
         <button class="sound" onclick="playSound('${id}')">
-            <img src="images/sound.png" alt="Play Sound">
+            <img src="/swipenglish/sourceFiles/sound.png" alt="Play Sound">
         </button>
     </div>
 </div>
@@ -77,15 +77,14 @@ function setupDraggableCard(cardId) {
     card.addEventListener('mousemove', handleDrag);
     card.addEventListener('touchmove', handleDrag);
 }
-// Create cards // Create cards  createCard('card', 'image/.webp', 'image/.webp', '.mp3');
-
-createCard('card1', 'images/cloudyB.webp', 'images/cloudyF.webp', 'sound/bulutlu.mp3');
-createCard('card2', 'images/foggyB.webp', 'images/foggyF.webp', 'sound/sisli.mp3');
-createCard('card3', 'images/partlycloudyB.webp', 'images/partlycloudyF.webp', 'sound/parcalıBulutlu.mp3');
-createCard('card4', 'images/rainbowB.webp', 'images/rainbowF.webp', 'sound/gokKusagı.mp3');
-createCard('card5', 'images/rainyB.webp', 'images/rainyF.webp', 'sound/yagmurlu.mp3');
-createCard('card6', 'images/snowyB.webp', 'images/snowyF.webp', 'sound/karlı.mp3');
-createCard('card7', 'images/stormyB.webp', 'images/stormyF.webp', 'sound/fırtınalı.mp3');
-createCard('card8', 'images/sunnyB.webp', 'images/sunnyF.webp', 'sound/gunesli.mp3');
-createCard('card9', 'images/tornadoB.webp', 'images/tornadoF.webp', 'sound/kasırga.mp3');
-createCard('card10', 'images/windyB.webp', 'images/windyF.webp', 'sound/ruzgarlı.mp3');
+// createCard('cardX', '/swipenglish/sourceFiles/aylarImages/.webp', '/swipenglish/sourceFiles/aylarImages/.webp' ,'/swipenglish/sourceFiles/hDurumuSoundSound/.mp3');
+createCard('card1', '/swipenglish/sourceFiles/aylarImages/cloudyB.webp', '/swipenglish/sourceFiles/aylarImages/cloudyF.webp', '/swipenglish/sourceFiles/hDurumuSound/bulutlu.mp3');
+createCard('card2', '/swipenglish/sourceFiles/aylarImages/foggyB.webp', '/swipenglish/sourceFiles/aylarImages/foggyF.webp', '/swipenglish/sourceFiles/hDurumuSound/sisli.mp3');
+createCard('card3', '/swipenglish/sourceFiles/aylarImages/partlycloudyB.webp', '/swipenglish/sourceFiles/aylarImages/partlycloudyF.webp', '/swipenglish/sourceFiles/hDurumuSound/parcalıBulutlu.mp3');
+createCard('card4', '/swipenglish/sourceFiles/aylarImages/rainbowB.webp', '/swipenglish/sourceFiles/aylarImages/rainbowF.webp', '/swipenglish/sourceFiles/hDurumuSound/gokKusagı.mp3');
+createCard('card5', '/swipenglish/sourceFiles/aylarImages/rainyB.webp', '/swipenglish/sourceFiles/aylarImages/rainyF.webp', '/swipenglish/sourceFiles/hDurumuSound/yagmurlu.mp3');
+createCard('card6', '/swipenglish/sourceFiles/aylarImages/snowyB.webp', '/swipenglish/sourceFiles/aylarImages/snowyF.webp', '/swipenglish/sourceFiles/hDurumuSound/karlı.mp3');
+createCard('card7', '/swipenglish/sourceFiles/aylarImages/stormyB.webp', '/swipenglish/sourceFiles/aylarImages/stormyF.webp', '/swipenglish/sourceFiles/hDurumuSound/fırtınalı.mp3');
+createCard('card8', '/swipenglish/sourceFiles/aylarImages/sunnyB.webp', '/swipenglish/sourceFiles/aylarImages/sunnyF.webp', '/swipenglish/sourceFiles/hDurumuSound/gunesli.mp3');
+createCard('card9', '/swipenglish/sourceFiles/aylarImages/tornadoB.webp', '/swipenglish/sourceFiles/aylarImages/tornadoF.webp', '/swipenglish/sourceFiles/hDurumuSound/kasırga.mp3');
+createCard('card10', '/swipenglish/sourceFiles/aylarImages/windyB.webp', '/swipenglish/sourceFiles/aylarImages/windyF.webp', '/swipenglish/sourceFiles/hDurumuSound/ruzgarlı.mp3');

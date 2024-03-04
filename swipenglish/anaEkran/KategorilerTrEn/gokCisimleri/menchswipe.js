@@ -15,7 +15,7 @@ function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
     <div class="sound-container">
         <audio id="sound_${id}" src="${soundSrc}"></audio>
         <button class="sound" onclick="playSound('${id}')">
-            <img src="images/sound.png" alt="Play Sound">
+            <img src="/swipenglish/sourceFiles/sound.png" alt="Play Sound">
         </button>
     </div>
 </div>
@@ -77,17 +77,18 @@ function setupDraggableCard(cardId) {
     card.addEventListener('mousemove', handleDrag);
     card.addEventListener('touchmove', handleDrag);
 }
-// Create cards // Create cards  createCard('card', 'image/.webp', 'image/.webp', 'sound/.mp3');
 
-createCard('card1', 'images/dunyaB.webp', 'images/dunyaF.webp', 'sound/dunya.mp3');
-createCard('card2', 'images/ayB.webp', 'images/ayF.webp', 'sound/.mp3');
-createCard('card3', 'images/gunesB.webp', 'images/gunesF.webp', 'sound/gunes.mp3');
-createCard('card4', 'images/jupiterB.webp', 'images/jupiterF.webp', 'sound/jupiter.mp3');
-createCard('card5', 'images/mars.webp', 'images/mars.webp', 'sound/mars.mp3');
-createCard('card6', 'images/merkurB.webp', 'images/merkurF.webp', 'sound/merkur.mp3');
-createCard('card7', 'images/neptunB.webp', 'images/neptunF.webp', 'sound/neptun.mp3');
-createCard('card8', 'images/plutoB.webp', 'images/plutoF.webp', '.mp3');
-createCard('card9', 'images/saturnB.webp', 'images/saturnF.webp', 'sound/saturn.mp3');
-createCard('card10', 'images/uranusB.webp', 'images/uranusF.webp', 'sound/uranus.mp3');
-createCard('card11', 'images/venusB.webp', 'images/venusF.webp', 'sound/venus.mp3');
+// createCard('cardX', '/swipenglish/sourceFiles/gCisimleriImages/.webp', '/swipenglish/sourceFiles/gCisimleriImages/.webp' ,'/swipenglish/sourceFiles/gCisimleriSound/.mp3');
+
+createCard('card1', '/swipenglish/sourceFiles/gCisimleriImages/dunyaB.webp', '/swipenglish/sourceFiles/gCisimleriImages/dunyaF.webp', '/swipenglish/sourceFiles/gCisimleriSound/dunya.mp3');
+createCard('card2', '/swipenglish/sourceFiles/gCisimleriImages/ayB.webp', '/swipenglish/sourceFiles/gCisimleriImages/ayF.webp', '/swipenglish/sourceFiles/gCisimleriSound/.mp3');
+createCard('card3', '/swipenglish/sourceFiles/gCisimleriImages/gunesB.webp', '/swipenglish/sourceFiles/gCisimleriImages/gunesF.webp', '/swipenglish/sourceFiles/gCisimleriSound/gunes.mp3');
+createCard('card4', '/swipenglish/sourceFiles/gCisimleriImages/jupiterB.webp', '/swipenglish/sourceFiles/gCisimleriImages/jupiterF.webp', '/swipenglish/sourceFiles/gCisimleriSound/jupiter.mp3');
+createCard('card5', '/swipenglish/sourceFiles/gCisimleriImages/mars.webp', '/swipenglish/sourceFiles/gCisimleriImages/mars.webp', '/swipenglish/sourceFiles/gCisimleriSound/mars.mp3');
+createCard('card6', '/swipenglish/sourceFiles/gCisimleriImages/merkurB.webp', '/swipenglish/sourceFiles/gCisimleriImages/merkurF.webp', '/swipenglish/sourceFiles/gCisimleriSound/merkur.mp3');
+createCard('card7', '/swipenglish/sourceFiles/gCisimleriImages/neptunB.webp', '/swipenglish/sourceFiles/gCisimleriImages/neptunF.webp', '/swipenglish/sourceFiles/gCisimleriSound/neptun.mp3');
+createCard('card8', '/swipenglish/sourceFiles/gCisimleriImages/plutoB.webp', '/swipenglish/sourceFiles/gCisimleriImages/plutoF.webp', '.mp3');
+createCard('card9', '/swipenglish/sourceFiles/gCisimleriImages/saturnB.webp', '/swipenglish/sourceFiles/gCisimleriImages/saturnF.webp', '/swipenglish/sourceFiles/gCisimleriSound/saturn.mp3');
+createCard('card10', '/swipenglish/sourceFiles/gCisimleriImages/uranusB.webp', '/swipenglish/sourceFiles/gCisimleriImages/uranusF.webp', '/swipenglish/sourceFiles/gCisimleriSound/uranus.mp3');
+createCard('card11', '/swipenglish/sourceFiles/gCisimleriImages/venusB.webp', '/swipenglish/sourceFiles/gCisimleriImages/venusF.webp', '/swipenglish/sourceFiles/gCisimleriSound/venus.mp3');
 

@@ -15,7 +15,7 @@ function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
     <div class="sound-container">
         <audio id="sound_${id}" src="${soundSrc}"></audio>
         <button class="sound" onclick="playSound('${id}')">
-            <img src="images/sound.png" alt="Play Sound">
+            <img src="/swipenglish/sourceFiles/sound.png" alt="Play Sound">
         </button>
     </div>
 </div>
@@ -79,16 +79,17 @@ function setupDraggableCard(cardId) {
 }
 // Create cards : createCard('card', 'images/.webp', 'images/.webp' , '.mp3');
 
-createCard('card1', 'images/ananasFront.webp', 'images/ananasBack.webp', 'sound/ananas.mp3');
-createCard('card2', 'images/appleBack.webp', 'images/appleFront.webp', 'sound/elma.mp3');
-createCard('card3', 'images/armutF.webp', 'images/armutB.webp', 'sound/armut.mp3');
-createCard('card4', 'images/bananaBack.webp', 'images/bananaFront.webp' , 'sound/muz.mp3');
-createCard('card5', 'images/cherryB.webp', 'images/cherryF.webp' , 'sound/kiraz.mp3');
-createCard('card6', 'images/cilekArka.webp', 'images/cilekOn.webp' , 'sound/cilek.mp3');
-createCard('card7', 'images/garbuzB.webp', 'images/garbuzF.webp' , 'sound/karpuz.mp3');
-createCard('card8', 'images/grapeF.webp', 'images/grapeB.webp' , 'sound/.mp3');
-createCard('card9', 'images/kayısıB.webp', 'images/kayısıF.webp' , 'sound/kayisi.mp3');
-createCard('card10', 'images/kiviF.webp', 'images/kiviB.webp' , 'sound/kivi.mp3');
-createCard('card11', 'images/melonB.webp', 'images/melonF.webp' , 'sound/kavun.mp3');
-createCard('card12', 'images/orangeBack.webp', 'images/orangeFront.webp' , 'sound/.mp3');
-createCard('card', 'images/peachB.webp', 'images/peachF.webp' , 'sound/seftali.mp3');
+createCard('card1', '/swipenglish/sourceFiles/meyvelerImages/ananasFront.webp', '/swipenglish/sourceFiles/meyvelerImages/ananasBack.webp', '/swipenglish/sourceFiles/meyvelerSound/ananas.mp3');
+createCard('card2', '/swipenglish/sourceFiles/meyvelerImages/appleBack.webp', '/swipenglish/sourceFiles/meyvelerImages/appleFront.webp', '/swipenglish/sourceFiles/meyvelerSound/elma.mp3');
+createCard('card3', '/swipenglish/sourceFiles/meyvelerImages/armutF.webp', '/swipenglish/sourceFiles/meyvelerImages/armutB.webp', '/swipenglish/sourceFiles/meyvelerSound/armut.mp3');
+createCard('card4', '/swipenglish/sourceFiles/meyvelerImages/bananaBack.webp', '/swipenglish/sourceFiles/meyvelerImages/bananaFront.webp', '/swipenglish/sourceFiles/meyvelerSound/muz.mp3');
+createCard('card5', '/swipenglish/sourceFiles/meyvelerImages/cherryB.webp', '/swipenglish/sourceFiles/meyvelerImages/cherryF.webp', '/swipenglish/sourceFiles/meyvelerSound/kiraz.mp3');
+createCard('card6', '/swipenglish/sourceFiles/meyvelerImages/cilekArka.webp', '/swipenglish/sourceFiles/meyvelerImages/cilekOn.webp', '/swipenglish/sourceFiles/meyvelerSound/cilek.mp3');
+createCard('card7', '/swipenglish/sourceFiles/meyvelerImages/garbuzB.webp', '/swipenglish/sourceFiles/meyvelerImages/garbuzF.webp', '/swipenglish/sourceFiles/meyvelerSound/karpuz.mp3');
+createCard('card8', '/swipenglish/sourceFiles/meyvelerImages/grapeF.webp', '/swipenglish/sourceFiles/meyvelerImages/grapeB.webp', '/swipenglish/sourceFiles/meyvelerSound/.mp3');
+createCard('card9', '/swipenglish/sourceFiles/meyvelerImages/kayısıB.webp', '/swipenglish/sourceFiles/meyvelerImages/kayısıF.webp', '/swipenglish/sourceFiles/meyvelerSound/kayisi.mp3');
+createCard('card10', '/swipenglish/sourceFiles/meyvelerImages/kiviF.webp', '/swipenglish/sourceFiles/meyvelerImages/kiviB.webp', '/swipenglish/sourceFiles/meyvelerSound/kivi.mp3');
+createCard('card11', '/swipenglish/sourceFiles/meyvelerImages/melonB.webp', '/swipenglish/sourceFiles/meyvelerImages/melonF.webp', '/swipenglish/sourceFiles/meyvelerSound/kavun.mp3');
+createCard('card12', '/swipenglish/sourceFiles/meyvelerImages/orangeBack.webp', '/swipenglish/sourceFiles/meyvelerImages/orangeFront.webp', '/swipenglish/sourceFiles/meyvelerSound/.mp3');
+createCard('card', '/swipenglish/sourceFiles/meyvelerImages/peachB.webp', '/swipenglish/sourceFiles/meyvelerImages/peachF.webp', '/swipenglish/sourceFiles/meyvelerSound/seftali.mp3');
+

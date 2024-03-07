@@ -1,11 +1,75 @@
 const questions = [
     {
-        question: "banana.png",
+        question: "/swipenglish/sourceFiles/quizImages/muz.webp",
         answers: [
-            {text: "Banana", word: "banana.mp3", correct: true},
-            {text: "Apple", word: "apple.mp3", correct: false},
-            {text: "Peach", word: "peach.mp3", correct: false},
+            {text: "Banana", word: "/swipenglish/sourceFiles/meyvelerSound/muz.mp3", correct: true},
+            {text: "Apple", word: "/swipenglish/sourceFiles/meyvelerSound/elma.mp3", correct: false},
+            {text: "Peach", word: "/swipenglish/sourceFiles/meyvelerSound/seftali.mp3", correct: false},
             {text: "Orange", word: "orange.mp3", correct: false},
+        ]
+    },
+    {
+        question: "/swipenglish/sourceFiles/quizImages/portakal.webp",
+        answers: [
+            {text: "Banana", word: "/swipenglish/sourceFiles/meyvelerSound/muz.mp3", correct: false},
+            {text: "Apple", word: "/swipenglish/sourceFiles/meyvelerSound/elma.mp3", correct: false},
+            {text: "Peach", word: "/swipenglish/sourceFiles/meyvelerSound/seftali.mp3", correct: false},
+            {text: "Orange", word: "/swipenglish/sourceFiles/meyvelerSound/", correct: true},
+        ]
+    },
+    {
+        question: "/swipenglish/sourceFiles/quizImages/elma.webp",
+        answers: [
+            {text: "Banana", word: "/swipenglish/sourceFiles/meyvelerSound/muz.mp3", correct: false},
+            {text: "Apple", word: "/swipenglish/sourceFiles/meyvelerSound/elma.mp3", correct: true},
+            {text: "Peach", word: "/swipenglish/sourceFiles/meyvelerSound/seftali.mp3", correct: false},
+            {text: "Orange", word: "/swipenglish/sourceFiles/meyvelerSound/", correct: false},
+        ]
+    },
+    {
+        question: "/swipenglish/sourceFiles/quizImages/seftali.webp",
+        answers: [
+            {text: "Banana", word: "/swipenglish/sourceFiles/meyvelerSound/muz.mp3", correct: false},
+            {text: "Apple", word: "/swipenglish/sourceFiles/meyvelerSound/elma.mp3", correct: false},
+            {text: "Peach", word: "/swipenglish/sourceFiles/meyvelerSound/seftali.mp3", correct: true},
+            {text: "Orange", word: "/swipenglish/sourceFiles/meyvelerSound/", correct: false},
+        ]
+    },
+
+    {
+        question: "/swipenglish/sourceFiles/quizImages/kavun.webp",
+        answers: [
+            {text: "Melon", word: "/swipenglish/sourceFiles/meyvelerSound/kavun.mp3", correct: true},
+            {text: "Strawberry", word: "/swipenglish/sourceFiles/meyvelerSound/cilek.mp3", correct: false},
+            {text: "Cherry", word: "/swipenglish/sourceFiles/meyvelerSound/kiraz.mp3", correct: false},
+            {text: "Perry", word: "/swipenglish/sourceFiles/meyvelerSound/armut.mp3", correct: false},
+        ]
+    },
+    {
+        question: "/swipenglish/sourceFiles/quizImages/cilek.webp",
+        answers: [
+            {text: "Melon", word: "/swipenglish/sourceFiles/meyvelerSound/kavun.mp3", correct: false},
+            {text: "Strawberry", word: "/swipenglish/sourceFiles/meyvelerSound/cilek.mp3", correct: true},
+            {text: "Cherry", word: "/swipenglish/sourceFiles/meyvelerSound/kiraz.mp3", correct: false},
+            {text: "Perry", word: "/swipenglish/sourceFiles/meyvelerSound/armut.mp3", correct: false},
+        ]
+    },
+    {
+        question: "/swipenglish/sourceFiles/quizImages/kiraz.webp",
+        answers: [
+            {text: "Melon", word: "/swipenglish/sourceFiles/meyvelerSound/kavun.mp3", correct: false},
+            {text: "Strawberry", word: "/swipenglish/sourceFiles/meyvelerSound/cilek.mp3", correct: false},
+            {text: "Cherry", word: "/swipenglish/sourceFiles/meyvelerSound/kiraz.mp3", correct: true},
+            {text: "Perry", word: "/swipenglish/sourceFiles/meyvelerSound/armut.mp3", correct: false},
+        ]
+    },
+    {
+        question: "/swipenglish/sourceFiles/quizImages/armut.webp",
+        answers: [
+            {text: "Melon", word: "/swipenglish/sourceFiles/meyvelerSound/kavun.mp3", correct: false},
+            {text: "Strawberry", word: "/swipenglish/sourceFiles/meyvelerSound/cilek.mp3", correct: false},
+            {text: "Cherry", word: "/swipenglish/sourceFiles/meyvelerSound/kiraz.mp3", correct: false},
+            {text: "Perry", word: "/swipenglish/sourceFiles/meyvelerSound/armut.mp3", correct: true},
         ]
     },
     // Diğer sorular...
@@ -42,10 +106,9 @@ function showQuestion() {
         answerButton.classList.add("btn");
         
         const audioButton = document.createElement("button");
-        audioButton.innerHTML = "<img src='sound.png' alt='Audio Icon'>";
+        audioButton.innerHTML = "<img src='/swipenglish/sourceFiles/sound.png' alt='Audio Icon'>";
         audioButton.classList.add("audio-btn");
 
-        
         const audio = new Audio(answer.word);
         
         audioButton.addEventListener("click", (event) => {

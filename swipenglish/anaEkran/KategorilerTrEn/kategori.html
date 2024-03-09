@@ -1,69 +1,30 @@
 <!DOCTYPE html>
+<html style="background-color: #FF8080;">
 
-<html style="background-color: #FF8080;
-">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="kategori.css">
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="kategori.css">
-    </head>
+<body>
 
-    <body>
-
-        <div class="container">
-            <div class="baslik"><h1>Kategoriler</h1></div>
-
-            <button class="aylarbutton">Aylar</button><br>
-            <button class="numbersbutton">Sayılar</button><br>
-            <button class="sebzelerbutton">Sebzeler</button><br>
-            <button class="meyvelerbutton">Meyveler</button><br>
-            <button class="havaDurumubutton">Hava Durumu</button><br>
-            <button class="gokcisimleributton">Gök Cisimleri</button>
-            <button class="organlarbutton">Organlar</button>
-
+    <div class="container">
+        <div class="baslik">
+            <h1>Kategoriler</h1>
         </div>
 
+        <button class="aylarbutton" onclick="window.location.href = 'Aylar/menchswipe.html';">Aylar</button><br>
+        <button class="numbersbutton" onclick="window.location.href = 'Sayılar/menchswipe.html';">Sayılar</button><br>
+        <button class="sebzelerbutton" onclick="window.location.href = 'Sebzeler/menchswipe.html';">Sebzeler</button><br>
+        <button class="meyvelerbutton" onclick="window.location.href = 'Meyveler/menchswipe.html';">Meyveler</button><br>
+        <button class="havaDurumubutton" onclick="window.location.href = 'havaDurumu/menchswipe.html';">Hava Durumu</button><br>
+        <button class="gokcisimleributton" onclick="window.location.href = 'gokCisimleri/menchswipe.html';">Gök Cisimleri</button><br>
+        <button class="organlarbutton" onclick="window.location.href = 'Organlar/menchswipe.html';">Organlar</button><br>
 
-    </body>
+    </div>
 
-    <script>
-        window.onload = function() 
-        {
-            document.querySelector(".numbersbutton").addEventListener("click", function() 
-            {
-                window.location.href = "Sayılar/menchswipe.html";
-            });
 
-            document.querySelector(".meyvelerbutton").addEventListener("click", function() 
-            {
-                window.location.href = "Meyveler/menchswipe.html";
-            });
-
-            document.querySelector(".aylarbutton").addEventListener("click", function() 
-            {
-                window.location.href = "Aylar/menchswipe.html";
-            });
-
-            document.querySelector(".havaDurumubutton").addEventListener("click", function() 
-            {
-                window.location.href = "havaDurumu/menchswipe.html";
-            });
-
-            document.querySelector(".gokcisimleributton").addEventListener("click", function() 
-            {
-                window.location.href = "gokCisimleri/menchswipe.html";
-            });
-
-            document.querySelector(".sebzelerbutton").addEventListener("click", function() 
-            {
-                window.location.href = "Sebzeler/menchswipe.html";
-            });
-            document.querySelector(".organlarbutton").addEventListener("click", function() 
-            {
-                window.location.href = "Organlar/menchswipe.html";
-            });
-        };
-    </script>
+</body>
 
 </html>

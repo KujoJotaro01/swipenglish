@@ -2,25 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Swipenglish</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app">
-        <h1 id="question-num">Question 1/10</h1>
-        <div class="quiz">
-            <h2 id="question">Question goes here</h2>
-            <div class="answer-buttons">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
-            </div>
-            <button id="next-btn">Next</button>
-            
+    <button class="top-left-button"></button>
+    <div class="container">
+        <div class="baslik">
+            <h1>Quiz</h1>
         </div>
+        <button class="englishtoturkishbutton" onclick="window.location.href='/swipenglish/anaEkran/quiz/enTr/category.html'">İngilizce - Türkçe</button><br>
+        <button class="turkishtoenglishbutton" onclick="window.location.href='/swipenglish/anaEkran/quiz/trEn/kategori.html'">Türkçe - İngilizce</button>
+        
     </div>
-    <script src="script.js"></script>
+
 </body>
 </html>

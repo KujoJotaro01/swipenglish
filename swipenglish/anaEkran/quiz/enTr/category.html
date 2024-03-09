@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html style="background-color: #FF8080;
+">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="kategori.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="baslik"><h1>Categories</h1></div>
+            <button class="Aylarbutton">Months</button><br>
+            <button class="Sayılarbutton">Numbers</button><br>
+            <button class="Meyvelersbutton">Fruits</button><br>
+            <button class="havaDurumubutton">Weather</button><br>
+        </div>
+    </body>
+
+    <script>
+        window.onload = function() 
+        {
+            
+            document.querySelector(".havaDurumubutton").addEventListener("click", function() 
+            {
+                window.location.href = "havaDurumu/menchswipe.html";
+            });
+
+            document.querySelector(".Aylarbutton").addEventListener("click", function() 
+            {
+                window.location.href = "Aylar/menchswipe.html";//
+            });
+
+            document.querySelector(".Sayılarbutton").addEventListener("click", function() 
+            {
+                window.location.href = "Sayılar/menchswipe.html";//
+            });
+
+            document.querySelector(".Meyvelersbutton").addEventListener("click", function() 
+            {
+                window.location.href = "Meyveler/menchswipe.html";//
+            });
+        };
+    </script>
+
+</html>
+
+
+
+
+

@@ -12,29 +12,9 @@
         <div class="baslik">
             <h1>SwipEnglish</h1>
         </div>
-        <button class="englishtoturkishbutton">İngilizce - Türkçe</button><br>
-        <button class="turkishtoenglishbutton">Türkçe - İngilizce</button><br>
-        <button class="quizbutton">Quiz</button><br>
+        <button class="englishtoturkishbutton" onclick="window.location.href = 'anaEkran/KategorilerEnTr/kategori.html';">İngilizce - Türkçe</button><br>
+        <button class="turkishtoenglishbutton" onclick="window.location.href = 'anaEkran/KategorilerTrEn/kategori.html';">Türkçe - İngilizce</button><br>
+        <button class="quizbutton" onclick="window.location.href = 'anaEkran/quiz/index.html';">Quiz</button><br>
     </div>
-    <script>
-        window.onload = function() 
-        {
-            document.querySelector(".englishtoturkishbutton").addEventListener("click", function() 
-            {
-                window.location.href = "anaEkran/KategorilerEnTr/category.html";
-            });
-            
-            
-            document.querySelector(".turkishtoenglishbutton").addEventListener("click", function() 
-            {
-                window.location.href = "anaEkran/KategorilerTrEn/kategori.html";
-            });
-
-            document.querySelector(".quizbutton").addEventListener("click", function() 
-            {
-                window.location.href = "anaEkran/quiz/index.html";
-            });
-        }
-    </script>
 </body>
 </html>

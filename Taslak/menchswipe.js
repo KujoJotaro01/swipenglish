@@ -15,7 +15,8 @@ function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
     <div class="sound-container">
         <audio id="sound_${id}" src="${soundSrc}"></audio>
         <button class="sound" onclick="playSound('${id}')">
-            <img src="images/sound.png" alt="Play Sound">
+            <img src="/swipenglish/sourceFiles/sound.png
+            " alt="Play Sound">
         </button>
     </div>
 </div>

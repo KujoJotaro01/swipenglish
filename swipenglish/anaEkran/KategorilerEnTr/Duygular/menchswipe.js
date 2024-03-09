@@ -1,4 +1,4 @@
-function createCard(id, backImageSrc, frontImageSrc, soundSrc) {
+function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
     const section = document.createElement('section');
     section.innerHTML = `
     <div>
@@ -77,14 +77,14 @@ function setupDraggableCard(cardId) {
     card.addEventListener('mousemove', handleDrag);
     card.addEventListener('touchmove', handleDrag);
 }
-// createCard('cardX', '/swipenglish/sourceFiles/aylarImages/.webp', '/swipenglish/sourceFiles/aylarImages/.webp' ,'/swipenglish/sourceFiles/hDurumuSoundSound/.mp3');
-createCard('card1', '/swipenglish/sourceFiles/aylarImages/cloudyB.webp', '/swipenglish/sourceFiles/aylarImages/cloudyF.webp', '/swipenglish/sourceFiles/hDurumuSound/bulutlu.mp3');
-createCard('card2', '/swipenglish/sourceFiles/aylarImages/foggyB.webp', '/swipenglish/sourceFiles/aylarImages/foggyF.webp', '/swipenglish/sourceFiles/hDurumuSound/sisli.mp3');
-createCard('card3', '/swipenglish/sourceFiles/aylarImages/partlycloudyB.webp', '/swipenglish/sourceFiles/aylarImages/partlycloudyF.webp', '/swipenglish/sourceFiles/hDurumuSound/parcalıBulutlu.mp3');
-createCard('card4', '/swipenglish/sourceFiles/aylarImages/rainbowB.webp', '/swipenglish/sourceFiles/aylarImages/rainbowF.webp', '/swipenglish/sourceFiles/hDurumuSound/gokKusagı.mp3');
-createCard('card5', '/swipenglish/sourceFiles/aylarImages/rainyB.webp', '/swipenglish/sourceFiles/aylarImages/rainyF.webp', '/swipenglish/sourceFiles/hDurumuSound/yagmurlu.mp3');
-createCard('card6', '/swipenglish/sourceFiles/aylarImages/snowyB.webp', '/swipenglish/sourceFiles/aylarImages/snowyF.webp', '/swipenglish/sourceFiles/hDurumuSound/karlı.mp3');
-createCard('card7', '/swipenglish/sourceFiles/aylarImages/stormyB.webp', '/swipenglish/sourceFiles/aylarImages/stormyF.webp', '/swipenglish/sourceFiles/hDurumuSound/fırtınalı.mp3');
-createCard('card8', '/swipenglish/sourceFiles/aylarImages/sunnyB.webp', '/swipenglish/sourceFiles/aylarImages/sunnyF.webp', '/swipenglish/sourceFiles/hDurumuSound/gunesli.mp3');
-createCard('card9', '/swipenglish/sourceFiles/aylarImages/tornadoB.webp', '/swipenglish/sourceFiles/aylarImages/tornadoF.webp', '/swipenglish/sourceFiles/hDurumuSound/kasırga.mp3');
-createCard('card10', '/swipenglish/sourceFiles/aylarImages/windyB.webp', '/swipenglish/sourceFiles/aylarImages/windyF.webp', '/swipenglish/sourceFiles/hDurumuSound/ruzgarlı.mp3');
+//createCard('cardX', '/swipenglish/sourceFiles/IfadelerImages/.webp','/swipenglish/sourceFiles/IfadelerImages/.webp' ,'/swipenglish/sourceFiles/IfadelerSound/.');
+
+createCard('card1', '/swipenglish/sourceFiles/IfadelerImages/endiseB.webp', '/swipenglish/sourceFiles/IfadelerImages/endiseF.webp', '/swipenglish/sourceFiles/IfadelerSound/endiseli.mp3');
+createCard('card2', '/swipenglish/sourceFiles/IfadelerImages/hastaB.webp', 'swipenglish/sourceFiles/IfadelerImages/hastaF.webp', '/swipenglish/sourceFiles/IfadelerSound/hasta.mp3');
+createCard('card3', '/swipenglish/sourceFiles/IfadelerImages/kizginB.webp', '/swipenglish/sourceFiles/IfadelerImages/kizginF.webp', '/swipenglish/sourceFiles/IfadelerSound/sinirli.mp3');
+createCard('card4', '/swipenglish/sourceFiles/IfadelerImages/korkmusB.webp','/swipenglish/sourceFiles/IfadelerImages/korkmusF.webp' ,'/swipenglish/sourceFiles/IfadelerSound/korkmus.mp3');
+createCard('card5', '/swipenglish/sourceFiles/IfadelerImages/mutluB.webp','/swipenglish/sourceFiles/IfadelerImages/mutluF.webp' ,'/swipenglish/sourceFiles/IfadelerSound/mutlu.mp3.');
+createCard('card6', '/swipenglish/sourceFiles/IfadelerImages/stresliB.webp','/swipenglish/sourceFiles/IfadelerImages/stresliF.webp' ,'/swipenglish/sourceFiles/IfadelerSound/.');
+createCard('card7', '/swipenglish/sourceFiles/IfadelerImages/uykuluB.webp','/swipenglish/sourceFiles/IfadelerImages/uykuluF.webp' ,'/swipenglish/sourceFiles/IfadelerSound/.');
+createCard('card8', '/swipenglish/sourceFiles/IfadelerImages/uzgunB.webp','/swipenglish/sourceFiles/IfadelerImages/uzgunF.webp' ,'/swipenglish/sourceFiles/IfadelerSound/uzgun.mp3.');
+createCard('card9', '/swipenglish/sourceFiles/IfadelerImages/yorgunB.webp','/swipenglish/sourceFiles/IfadelerImages/yorgunF.webp' ,'/swipenglish/sourceFiles/IfadelerSound/yorgun.mp3');

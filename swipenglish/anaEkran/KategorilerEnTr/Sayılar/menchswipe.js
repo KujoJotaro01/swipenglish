@@ -15,7 +15,7 @@ function createCard(id, backImageSrc, frontImageSrc, soundSrc) {
     <div class="sound-container">
         <audio id="sound_${id}" src="${soundSrc}"></audio>
         <button class="sound" onclick="playSound('${id}')">
-            <img src="image/sound.png" alt="Play Sound">
+            <img src="/swipenglish/sourceFiles/sound.png" alt="Play Sound">
         </button>
     </div>
 </div>
@@ -77,16 +77,17 @@ function setupDraggableCard(cardId) {
     card.addEventListener('mousemove', handleDrag);
 }
 
-// Create cards  createCard('card', 'image/.webp', 'image/.webp');
+// Create cards createCard('cardX', '/swipenglish/sourceFiles/sayılarImages/.webp', '/swipenglish/sourceFiles/sayılarImages/.webp' ,'/swipenglish/sourceFiles/sayılarSound/.mp3');
 
-createCard('card1', 'image/zeroB.webp', 'image/zeroF.webp' , 'sound/sifir.mp3');
-createCard('card2', 'image/oneB.webp', 'image/oneF.webp' ,'sound/bir.mp3');
-createCard('card3', 'image/twoB.webp', 'image/twoF.webp','sound/iki.mp3');
-createCard('card4','image/threeB.webp','image/threeF.webp','sound/uc.mp3')
-createCard('card5', 'image/fourB.webp', 'image/fourF.webp','sound/dort.mp3');
-createCard('card6', 'image/fiveB.webp', 'image/fiveF.webp','sound/bes.mp3'); 
-createCard('card7', 'image/sixB.webp', 'image/sixF.webp','sound/alti.mp3');
-createCard('card8', 'image/sevenB.webp', 'image/sevenF.webp','sound/yedi.mp3');
-createCard('card9', 'image/eightB.webp', 'image/eightF.webp','sound/sekiz.mp3');
-createCard('card10', 'image/nineB.webp', 'image/nineF.webp','sound/dokuz.mp3');
-createCard('card11', 'image/tenB.webp', 'image/tenF.webp','sound/on.mp3');
+createCard('card1', '/swipenglish/sourceFiles/sayılarImages/zeroB.webp', '/swipenglish/sourceFiles/sayılarImages/zeroF.webp', '/swipenglish/sourceFiles/sayılarSound/sifir.mp3');
+createCard('card2', '/swipenglish/sourceFiles/sayılarImages/oneB.webp', '/swipenglish/sourceFiles/sayılarImages/oneF.webp', '/swipenglish/sourceFiles/sayılarSound/bir.mp3');
+createCard('card3', '/swipenglish/sourceFiles/sayılarImages/twoB.webp', '/swipenglish/sourceFiles/sayılarImages/twoF.webp', '/swipenglish/sourceFiles/sayılarSound/iki.mp3');
+createCard('card4', '/swipenglish/sourceFiles/sayılarImages/threeB.webp', '/swipenglish/sourceFiles/sayılarImages/threeF.webp', '/swipenglish/sourceFiles/sayılarSound/uc.mp3');
+createCard('card5', '/swipenglish/sourceFiles/sayılarImages/fourB.webp', '/swipenglish/sourceFiles/sayılarImages/fourF.webp', '/swipenglish/sourceFiles/sayılarSound/dort.mp3');
+createCard('card6', '/swipenglish/sourceFiles/sayılarImages/fiveB.webp', '/swipenglish/sourceFiles/sayılarImages/fiveF.webp', '/swipenglish/sourceFiles/sayılarSound/bes.mp3');
+createCard('card7', '/swipenglish/sourceFiles/sayılarImages/sixB.webp', '/swipenglish/sourceFiles/sayılarImages/sixF.webp', '/swipenglish/sourceFiles/sayılarSound/alti.mp3');
+createCard('card8', '/swipenglish/sourceFiles/sayılarImages/sevenB.webp', '/swipenglish/sourceFiles/sayılarImages/sevenF.webp', '/swipenglish/sourceFiles/sayılarSound/yedi.mp3');
+createCard('card9', '/swipenglish/sourceFiles/sayılarImages/eightB.webp', '/swipenglish/sourceFiles/sayılarImages/eightF.webp', '/swipenglish/sourceFiles/sayılarSound/sekiz.mp3');
+createCard('card10', '/swipenglish/sourceFiles/sayılarImages/nineB.webp', '/swipenglish/sourceFiles/sayılarImages/nineF.webp', '/swipenglish/sourceFiles/sayılarSound/dokuz.mp3');
+createCard('card11', '/swipenglish/sourceFiles/sayılarImages/tenB.webp', '/swipenglish/sourceFiles/sayılarImages/tenF.webp', '/swipenglish/sourceFiles/sayılarSound/on.mp3');
+

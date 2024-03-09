@@ -77,14 +77,18 @@ function setupDraggableCard(cardId) {
     card.addEventListener('mousemove', handleDrag);
     card.addEventListener('touchmove', handleDrag);
 }
-// createCard('cardX', '/swipenglish/sourceFiles/aylarImages/.webp', '/swipenglish/sourceFiles/aylarImages/.webp' ,'/swipenglish/sourceFiles/hDurumuSoundSound/.mp3');
-createCard('card1', '/swipenglish/sourceFiles/aylarImages/cloudyB.webp', '/swipenglish/sourceFiles/aylarImages/cloudyF.webp', '/swipenglish/sourceFiles/hDurumuSound/bulutlu.mp3');
-createCard('card2', '/swipenglish/sourceFiles/aylarImages/foggyB.webp', '/swipenglish/sourceFiles/aylarImages/foggyF.webp', '/swipenglish/sourceFiles/hDurumuSound/sisli.mp3');
-createCard('card3', '/swipenglish/sourceFiles/aylarImages/partlycloudyB.webp', '/swipenglish/sourceFiles/aylarImages/partlycloudyF.webp', '/swipenglish/sourceFiles/hDurumuSound/parcalıBulutlu.mp3');
-createCard('card4', '/swipenglish/sourceFiles/aylarImages/rainbowB.webp', '/swipenglish/sourceFiles/aylarImages/rainbowF.webp', '/swipenglish/sourceFiles/hDurumuSound/gokKusagı.mp3');
-createCard('card5', '/swipenglish/sourceFiles/aylarImages/rainyB.webp', '/swipenglish/sourceFiles/aylarImages/rainyF.webp', '/swipenglish/sourceFiles/hDurumuSound/yagmurlu.mp3');
-createCard('card6', '/swipenglish/sourceFiles/aylarImages/snowyB.webp', '/swipenglish/sourceFiles/aylarImages/snowyF.webp', '/swipenglish/sourceFiles/hDurumuSound/karlı.mp3');
-createCard('card7', '/swipenglish/sourceFiles/aylarImages/stormyB.webp', '/swipenglish/sourceFiles/aylarImages/stormyF.webp', '/swipenglish/sourceFiles/hDurumuSound/fırtınalı.mp3');
-createCard('card8', '/swipenglish/sourceFiles/aylarImages/sunnyB.webp', '/swipenglish/sourceFiles/aylarImages/sunnyF.webp', '/swipenglish/sourceFiles/hDurumuSound/gunesli.mp3');
-createCard('card9', '/swipenglish/sourceFiles/aylarImages/tornadoB.webp', '/swipenglish/sourceFiles/aylarImages/tornadoF.webp', '/swipenglish/sourceFiles/hDurumuSound/kasırga.mp3');
-createCard('card10', '/swipenglish/sourceFiles/aylarImages/windyB.webp', '/swipenglish/sourceFiles/aylarImages/windyF.webp', '/swipenglish/sourceFiles/hDurumuSound/ruzgarlı.mp3');
+
+// createCard('cardX', '/swipenglish/sourceFiles/gCisimleriImages/.webp', '/swipenglish/sourceFiles/gCisimleriImages/.webp' ,'/swipenglish/sourceFiles/gCisimleriSound/.mp3');
+
+createCard('card1', '/swipenglish/sourceFiles/gCisimleriImages/dunyaB.webp', '/swipenglish/sourceFiles/gCisimleriImages/dunyaF.webp', '/swipenglish/sourceFiles/gCisimleriSound/dunya.mp3');
+createCard('card2', '/swipenglish/sourceFiles/gCisimleriImages/ayB.webp', '/swipenglish/sourceFiles/gCisimleriImages/ayF.webp', '/swipenglish/sourceFiles/gCisimleriSound/.mp3');
+createCard('card3', '/swipenglish/sourceFiles/gCisimleriImages/gunesB.webp', '/swipenglish/sourceFiles/gCisimleriImages/gunesF.webp', '/swipenglish/sourceFiles/gCisimleriSound/gunes.mp3');
+createCard('card4', '/swipenglish/sourceFiles/gCisimleriImages/jupiterB.webp', '/swipenglish/sourceFiles/gCisimleriImages/jupiterF.webp', '/swipenglish/sourceFiles/gCisimleriSound/jupiter.mp3');
+createCard('card5', '/swipenglish/sourceFiles/gCisimleriImages/mars.webp', '/swipenglish/sourceFiles/gCisimleriImages/mars.webp', '/swipenglish/sourceFiles/gCisimleriSound/mars.mp3');
+createCard('card6', '/swipenglish/sourceFiles/gCisimleriImages/merkurB.webp', '/swipenglish/sourceFiles/gCisimleriImages/merkurF.webp', '/swipenglish/sourceFiles/gCisimleriSound/merkur.mp3');
+createCard('card7', '/swipenglish/sourceFiles/gCisimleriImages/neptunB.webp', '/swipenglish/sourceFiles/gCisimleriImages/neptunF.webp', '/swipenglish/sourceFiles/gCisimleriSound/neptun.mp3');
+createCard('card8', '/swipenglish/sourceFiles/gCisimleriImages/plutoB.webp', '/swipenglish/sourceFiles/gCisimleriImages/plutoF.webp', '.mp3');
+createCard('card9', '/swipenglish/sourceFiles/gCisimleriImages/saturnB.webp', '/swipenglish/sourceFiles/gCisimleriImages/saturnF.webp', '/swipenglish/sourceFiles/gCisimleriSound/saturn.mp3');
+createCard('card10', '/swipenglish/sourceFiles/gCisimleriImages/uranusB.webp', '/swipenglish/sourceFiles/gCisimleriImages/uranusF.webp', '/swipenglish/sourceFiles/gCisimleriSound/uranus.mp3');
+createCard('card11', '/swipenglish/sourceFiles/gCisimleriImages/venusB.webp', '/swipenglish/sourceFiles/gCisimleriImages/venusF.webp', '/swipenglish/sourceFiles/gCisimleriSound/venus.mp3');
+

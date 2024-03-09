@@ -2,131 +2,103 @@ const questions = [
     {
         question: "/swipenglish/sourceFiles/gCisimleriImages/ayB.webp",
         answers: [
-            {text: "Banana", word: "/swipenglish/sourceFiles/meyvelerSound/muz.mp3", correct: true},
-            {text: "Apple", word: "/swipenglish/sourceFiles/meyvelerSound/elma.mp3", correct: false},
-            {text: "Peach", word: "/swipenglish/sourceFiles/meyvelerSound/seftali.mp3", correct: false},
-            {text: "Orange", word: "orange.mp3", correct: false},
+            {text: "Earth", word: "/swipenglish/sourceFiles/gCisimleriSound/dunya.mp3", correct: false},
+            {text: "Moon", word: "", correct: true},
+            {text: "Sun", word: "/swipenglish/sourceFiles/gCisimleriSound/gunes.mp3", correct: false},
+            {text: "Jupiter", word: "/swipenglish/sourceFiles/gCisimleriSound/jupiter.mp3", correct: false},
         ]
     },
     {
-        question: "/swipenglish/sourceFiles/quizImages/portakal.webp",
+        question: "/swipenglish/sourceFiles/gCisimleriImages/dunyaB.webp",
         answers: [
-            {text: "Banana", word: "/swipenglish/sourceFiles/meyvelerSound/muz.mp3", correct: false},
-            {text: "Apple", word: "/swipenglish/sourceFiles/meyvelerSound/elma.mp3", correct: false},
-            {text: "Peach", word: "/swipenglish/sourceFiles/meyvelerSound/seftali.mp3", correct: false},
-            {text: "Orange", word: "/swipenglish/sourceFiles/meyvelerSound/", correct: true},
+            {text: "Earth", word: "/swipenglish/sourceFiles/gCisimleriSound/dunya.mp3", correct: true},
+            {text: "Moon", word: "", correct: false},
+            {text: "Sun", word: "/swipenglish/sourceFiles/gCisimleriSound/gunes.mp3", correct: false},
+            {text: "Jupiter", word: "/swipenglish/sourceFiles/gCisimleriSound/jupiter.mp3", correct: false},
         ]
     },
     {
-        question: "/swipenglish/sourceFiles/quizImages/elma.webp",
+        question: "/swipenglish/sourceFiles/gCisimleriImages/jupiterB.webp",
         answers: [
-            {text: "Banana", word: "/swipenglish/sourceFiles/meyvelerSound/muz.mp3", correct: false},
-            {text: "Apple", word: "/swipenglish/sourceFiles/meyvelerSound/elma.mp3", correct: true},
-            {text: "Peach", word: "/swipenglish/sourceFiles/meyvelerSound/seftali.mp3", correct: false},
-            {text: "Orange", word: "/swipenglish/sourceFiles/meyvelerSound/", correct: false},
+            {text: "Earth", word: "/swipenglish/sourceFiles/gCisimleriSound/dunya.mp3", correct: false},
+            {text: "Moon", word: "", correct: false},
+            {text: "Sun", word: "/swipenglish/sourceFiles/gCisimleriSound/gunes.mp3", correct: false},
+            {text: "Jupiter", word: "/swipenglish/sourceFiles/gCisimleriSound/jupiter.mp3", correct: true},
         ]
     },
     {
-        question: "/swipenglish/sourceFiles/quizImages/seftali.webp",
+        question: "/swipenglish/sourceFiles/gCisimleriImages/gunesB.webp",
         answers: [
-            {text: "Banana", word: "/swipenglish/sourceFiles/meyvelerSound/muz.mp3", correct: false},
-            {text: "Apple", word: "/swipenglish/sourceFiles/meyvelerSound/elma.mp3", correct: false},
-            {text: "Peach", word: "/swipenglish/sourceFiles/meyvelerSound/seftali.mp3", correct: true},
-            {text: "Orange", word: "/swipenglish/sourceFiles/meyvelerSound/", correct: false},
+            {text: "Earth", word: "/swipenglish/sourceFiles/gCisimleriSound/dunya.mp3", correct: false},
+            {text: "Moon", word: "", correct: false},
+            {text: "Sun", word: "/swipenglish/sourceFiles/gCisimleriSound/gunes.mp3", correct: true},
+            {text: "Jupiter", word: "/swipenglish/sourceFiles/gCisimleriSound/jupiter.mp3", correct: false},
+        ]
+    },
+    {
+        question: "/swipenglish/sourceFiles/gCisimleriImages/mars.webp",
+        answers: [
+            {text: "Mars", word: "/swipenglish/sourceFiles/gCisimleriSound/mars.mp3", correct: true},
+            {text: "Mercury", word: "/swipenglish/sourceFiles/gCisimleriSound/merkur.mp3", correct: false},
+            {text: "Neptune", word: "/swipenglish/sourceFiles/gCisimleriSound/neptun.mp3", correct: false},
+            {text: "Saturn", word: "/swipenglish/sourceFiles/gCisimleriSound/saturn.mp3", correct: false},
+        ]
+    },
+    {
+        question: "/swipenglish/sourceFiles/gCisimleriImages/merkurB.webp",
+        answers: [
+            {text: "Mars", word: "/swipenglish/sourceFiles/gCisimleriSound/mars.mp3", correct: false},
+            {text: "Mercury", word: "/swipenglish/sourceFiles/gCisimleriSound/merkur.mp3", correct: true},
+            {text: "Neptune", word: "/swipenglish/sourceFiles/gCisimleriSound/neptun.mp3", correct: false},
+            {text: "Saturn", word: "/swipenglish/sourceFiles/gCisimleriSound/saturn.mp3", correct: false},
+        ]
+    },
+    {
+        question: "/swipenglish/sourceFiles/gCisimleriImages/neptunB.webp",
+        answers: [
+            {text: "Mars", word: "/swipenglish/sourceFiles/gCisimleriSound/mars.mp3", correct: false},
+            {text: "Mercury", word: "/swipenglish/sourceFiles/gCisimleriSound/merkur.mp3", correct: false},
+            {text: "Neptune", word: "/swipenglish/sourceFiles/gCisimleriSound/neptun.mp3", correct: true},
+            {text: "Saturn", word: "/swipenglish/sourceFiles/gCisimleriSound/saturn.mp3", correct: false},
+        ]
+    },
+    {
+        question: "/swipenglish/sourceFiles/gCisimleriImages/saturnB.webp",
+        answers: [
+            {text: "Mars", word: "/swipenglish/sourceFiles/gCisimleriSound/mars.mp3", correct: false},
+            {text: "Mercury", word: "/swipenglish/sourceFiles/gCisimleriSound/merkur.mp3", correct: false},
+            {text: "Neptune", word: "/swipenglish/sourceFiles/gCisimleriSound/neptun.mp3", correct: false},
+            {text: "Saturn", word: "/swipenglish/sourceFiles/gCisimleriSound/saturn.mp3", correct: true},
+        ]
+    },
+    {
+        question: "/swipenglish/sourceFiles/gCisimleriImages/uranusB.webp",
+        answers: [
+            {text: "Mars", word: "/swipenglish/sourceFiles/gCisimleriSound/mars.mp3", correct: false},
+            {text: "Uranus", word: "/swipenglish/sourceFiles/gCisimleriSound/uranus.mp3", correct: true},
+            {text: "Neptune", word: "/swipenglish/sourceFiles/gCisimleriSound/neptun.mp3", correct: false},
+            {text: "Venus", word: "/swipenglish/sourceFiles/gCisimleriSound/venus.mp3", correct: false},
+        ]
+    },
+    {
+        question: "/swipenglish/sourceFiles/gCisimleriImages/venusB.webp",
+        answers: [
+            {text: "Mars", word: "/swipenglish/sourceFiles/gCisimleriSound/mars.mp3", correct: false},
+            {text: "Uranus", word: "/swipenglish/sourceFiles/gCisimleriSound/uranus.mp3", correct: false},
+            {text: "Neptune", word: "/swipenglish/sourceFiles/gCisimleriSound/neptun.mp3", correct: false},
+            {text: "Venus", word: "/swipenglish/sourceFiles/gCisimleriSound/venus.mp3", correct: true},
+        ]
+    },
+    {
+        question: "/swipenglish/sourceFiles/gCisimleriImages/plutoB.webp",
+        answers: [
+            {text: "Pluto", word: "", correct: true},
+            {text: "Uranus", word: "/swipenglish/sourceFiles/gCisimleriSound/uranus.mp3", correct: false},
+            {text: "Neptune", word: "/swipenglish/sourceFiles/gCisimleriSound/neptun.mp3", correct: false},
+            {text: "Venus", word: "/swipenglish/sourceFiles/gCisimleriSound/venus.mp3", correct: false},
         ]
     },
 
-    {
-        question: "/swipenglish/sourceFiles/quizImages/kavun.webp",
-        answers: [
-            {text: "Melon", word: "/swipenglish/sourceFiles/meyvelerSound/kavun.mp3", correct: true},
-            {text: "Strawberry", word: "/swipenglish/sourceFiles/meyvelerSound/cilek.mp3", correct: false},
-            {text: "Cherry", word: "/swipenglish/sourceFiles/meyvelerSound/kiraz.mp3", correct: false},
-            {text: "Perry", word: "/swipenglish/sourceFiles/meyvelerSound/armut.mp3", correct: false},
-        ]
-    },
-    {
-        question: "/swipenglish/sourceFiles/quizImages/cilek.webp",
-        answers: [
-            {text: "Melon", word: "/swipenglish/sourceFiles/meyvelerSound/kavun.mp3", correct: false},
-            {text: "Strawberry", word: "/swipenglish/sourceFiles/meyvelerSound/cilek.mp3", correct: true},
-            {text: "Cherry", word: "/swipenglish/sourceFiles/meyvelerSound/kiraz.mp3", correct: false},
-            {text: "Perry", word: "/swipenglish/sourceFiles/meyvelerSound/armut.mp3", correct: false},
-        ]
-    },
-    {
-        question: "/swipenglish/sourceFiles/quizImages/kiraz.webp",
-        answers: [
-            {text: "Melon", word: "/swipenglish/sourceFiles/meyvelerSound/kavun.mp3", correct: false},
-            {text: "Strawberry", word: "/swipenglish/sourceFiles/meyvelerSound/cilek.mp3", correct: false},
-            {text: "Cherry", word: "/swipenglish/sourceFiles/meyvelerSound/kiraz.mp3", correct: true},
-            {text: "Perry", word: "/swipenglish/sourceFiles/meyvelerSound/armut.mp3", correct: false},
-        ]
-    },
-    {
-        question: "/swipenglish/sourceFiles/quizImages/armut.webp",
-        answers: [
-            {text: "Melon", word: "/swipenglish/sourceFiles/meyvelerSound/kavun.mp3", correct: false},
-            {text: "Strawberry", word: "/swipenglish/sourceFiles/meyvelerSound/cilek.mp3", correct: false},
-            {text: "Cherry", word: "/swipenglish/sourceFiles/meyvelerSound/kiraz.mp3", correct: false},
-            {text: "Perry", word: "/swipenglish/sourceFiles/meyvelerSound/armut.mp3", correct: true},
-        ]
-    },
-
-    {
-        question: "/swipenglish/sourceFiles/quizImages/ananas.webp",
-        answers: [
-            {text: "Pineapple", word: "/swipenglish/sourceFiles/meyvelerSound/ananas.mp3", correct: true},
-            {text: "Watermelon", word: "/swipenglish/sourceFiles/meyvelerSound/karpuz.mp3", correct: false},
-            {text: "Apricot", word: "/swipenglish/sourceFiles/meyvelerSound/kayisi.mp3", correct: false},
-            {text: "Kiwi", word: "/swipenglish/sourceFiles/meyvelerSound/kivi.mp3", correct: false},
-        ]
-    },
-    {
-        question: "/swipenglish/sourceFiles/quizImages/karpuz.webp",
-        answers: [
-            {text: "Pineapple", word: "/swipenglish/sourceFiles/meyvelerSound/ananas.mp3", correct: false},
-            {text: "Watermelon", word: "/swipenglish/sourceFiles/meyvelerSound/karpuz.mp3", correct: true},
-            {text: "Apricot", word: "/swipenglish/sourceFiles/meyvelerSound/kayisi.mp3", correct: false},
-            {text: "Kiwi", word: "/swipenglish/sourceFiles/meyvelerSound/kivi.mp3", correct: false},
-        ]
-    },
-    {
-        question: "/swipenglish/sourceFiles/quizImages/kayisi.webp",
-        answers: [
-            {text: "Pineapple", word: "/swipenglish/sourceFiles/meyvelerSound/ananas.mp3", correct: false},
-            {text: "Watermelon", word: "/swipenglish/sourceFiles/meyvelerSound/karpuz.mp3", correct: false},
-            {text: "Apricot", word: "/swipenglish/sourceFiles/meyvelerSound/kayisi.mp3", correct: true},
-            {text: "Kiwi", word: "/swipenglish/sourceFiles/meyvelerSound/kivi.mp3", correct: false},
-        ]
-    },
-    {
-        question: "/swipenglish/sourceFiles/quizImages/kivi.webp",
-        answers: [
-            {text: "Pineapple", word: "/swipenglish/sourceFiles/meyvelerSound/ananas.mp3", correct: false},
-            {text: "Watermelon", word: "/swipenglish/sourceFiles/meyvelerSound/karpuz.mp3", correct: false},
-            {text: "Apricot", word: "/swipenglish/sourceFiles/meyvelerSound/kayisi.mp3", correct: false},
-            {text: "Kiwi", word: "/swipenglish/sourceFiles/meyvelerSound/kivi.mp3", correct: true},
-        ]
-    },
-    {
-        question: "/swipenglish/sourceFiles/quizImages/uzum.webp",
-        answers: [
-            {text: "Pineapple", word: "/swipenglish/sourceFiles/meyvelerSound/ananas.mp3", correct: false},
-            {text: "Grape", word: "/swipenglish/sourceFiles/meyvelerSound/uzum.mp3", correct: true},
-            {text: "Apricot", word: "/swipenglish/sourceFiles/meyvelerSound/kayisi.mp3", correct: false},
-            {text: "Kiwi", word: "/swipenglish/sourceFiles/meyvelerSound/kivi.mp3", correct: false},
-        ]
-    },
-    {
-        question: "/swipenglish/sourceFiles/quizImages/.webp",
-        answers: [
-            {text: "Melon", word: "/swipenglish/sourceFiles/meyvelerSound/.mp3", correct: false},
-            {text: "Strawberry", word: "/swipenglish/sourceFiles/meyvelerSound/.mp3", correct: false},
-            {text: "Cherry", word: "/swipenglish/sourceFiles/meyvelerSound/.mp3", correct: false},
-            {text: "Perry", word: "/swipenglish/sourceFiles/meyvelerSound/.mp3", correct: true},
-        ]
-    },
     // Diğer sorular...
 ];
 

@@ -94,3 +94,5 @@ createCard('card12', '/swipenglish/sourceFiles/sebzelerImages/sarmsakB.webp', '/
 createCard('card13', '/swipenglish/sourceFiles/sebzelerImages/havucB.webp', '/swipenglish/sourceFiles/sebzelerImages/havucF.webp', '/swipenglish/sourceFiles/sebzelerSound/havuc.mp3');
 createCard('card14', '/swipenglish/sourceFiles/sebzelerImages/soganB.webp', '/swipenglish/sourceFiles/sebzelerImages/soganF.webp', '/swipenglish/sourceFiles/sebzelerSound/.mp3');
 createCard('card15', '/swipenglish/sourceFiles/sebzelerImages/turpF.webp', '/swipenglish/sourceFiles/sebzelerImages/turpB.webp', '/swipenglish/sourceFiles/sebzelerSound/.mp3');
+createCard('card16', '/swipenglish/sourceFiles/sebzelerImages/fasulyeF.webp', '/swipenglish/sourceFiles/sebzelerImages/fasulyeB.webp', '/swipenglish/sourceFiles/sebzelerSound/.mp3');
+createCard('card17', '/swipenglish/sourceFiles/sebzelerImages/marulB.webp', '/swipenglish/sourceFiles/sebzelerImages/marulF.webp', '/swipenglish/sourceFiles/sebzelerSound/.mp3');

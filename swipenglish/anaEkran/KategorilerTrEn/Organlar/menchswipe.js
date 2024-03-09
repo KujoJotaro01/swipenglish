@@ -1,4 +1,4 @@
-function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
+function createCard(id, backImageSrc, frontImageSrc, soundSrc) {
     const section = document.createElement('section');
     section.innerHTML = `
     <div>
@@ -18,7 +18,7 @@ function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
             <img src="/swipenglish/sourceFiles/sound.png
             " alt="Play Sound">
         </button>
-    </div>
+           </div>
 </div>
 `;
     document.getElementById('main-container').appendChild(section);
@@ -78,8 +78,15 @@ function setupDraggableCard(cardId) {
     card.addEventListener('mousemove', handleDrag);
     card.addEventListener('touchmove', handleDrag);
 }
-// Create cards // Create cards  createCard('card', 'image/.webp', 'image/.webp', 'sound/.mp3');
+// createCard('cardX', '/swipenglish/sourceFiles/organlarImages/.webp', '/swipenglish/sourceFiles/organlarImages/.webp' ,'/swipenglish/sourceFiles/organlarSound/.mp3');
 
-createCard('card1', 'images/.webp', 'sound/.webp', '.mp3');
-createCard('card2', 'images/.webp', 'sound/.webp', '.mp3');
+createCard('card1', '/swipenglish/sourceFiles/organlarImages/akcigerB.webp', '/swipenglish/sourceFiles/organlarImages/akcigerF.webp', '.mp3');
+createCard('card2', '/swipenglish/sourceFiles/organlarImages/bagirsakB.webp', '/swipenglish/sourceFiles/organlarImages/bagirsakF.webp' ,'/swipenglish/sourceFiles/organlarSound/.mp3');
+createCard('card3', '/swipenglish/sourceFiles/organlarImages/beyinB.webp', '/swipenglish/sourceFiles/organlarImages/beyinF.webp' ,'/swipenglish/sourceFiles/organlarSound/.mp3');
+createCard('card4', '/swipenglish/sourceFiles/organlarImages/bobrekB.webp', '/swipenglish/sourceFiles/organlarImages/bobrekF.webp' ,'/swipenglish/sourceFiles/organlarSound/.mp3');
+createCard('card5', '/swipenglish/sourceFiles/organlarImages/kalpB.webp', '/swipenglish/sourceFiles/organlarImages/kalpF.webp' ,'/swipenglish/sourceFiles/organlarSound/.mp3');
+createCard('card6', '/swipenglish/sourceFiles/organlarImages/karacigerB.webp', '/swipenglish/sourceFiles/organlarImages/karacigerF.webp' ,'/swipenglish/sourceFiles/organlarSound/.mp3');
+createCard('card7', '/swipenglish/sourceFiles/organlarImages/mideB.webp', '/swipenglish/sourceFiles/organlarImages/mideF.webp' ,'/swipenglish/sourceFiles/organlarSound/.mp3');
+
+
 

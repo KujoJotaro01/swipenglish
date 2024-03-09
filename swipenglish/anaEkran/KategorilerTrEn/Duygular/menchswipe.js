@@ -1,4 +1,4 @@
-function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
+function createCard(id, backImageSrc, frontImageSrc, soundSrc) {
     const section = document.createElement('section');
     section.innerHTML = `
     <div>
@@ -15,7 +15,7 @@ function createCard(id, frontImageSrc, backImageSrc, soundSrc) {
     <div class="sound-container">
         <audio id="sound_${id}" src="${soundSrc}"></audio>
         <button class="sound" onclick="playSound('${id}')">
-            <img src="images/sound.png" alt="Play Sound">
+            <img src="/swipenglish/sourceFiles/sound.png" alt="Play Sound">
         </button>
     </div>
 </div>
@@ -77,8 +77,14 @@ function setupDraggableCard(cardId) {
     card.addEventListener('mousemove', handleDrag);
     card.addEventListener('touchmove', handleDrag);
 }
-// Create cards // Create cards  createCard('card', 'image/.webp', 'image/.webp', 'sound/.mp3');
+//createCard('cardX', '/swipenglish/sourceFiles/IfadelerImages/.webp','/swipenglish/sourceFiles/IfadelerImages/.webp' ,'/swipenglish/sourceFiles/IfadelerSound/.');
 
-createCard('card1', 'images/.webp', 'sound/.webp', '.mp3');
-createCard('card2', 'images/.webp', 'sound/.webp', '.mp3');
-
+createCard('card1', '/swipenglish/sourceFiles/IfadelerImages/endiseB.webp', '/swipenglish/sourceFiles/IfadelerImages/endiseF.webp', '/swipenglish/sourceFiles/IfadelerSound/endiseli.mp3');
+createCard('card2', '/swipenglish/sourceFiles/IfadelerImages/hastaB.webp', 'swipenglish/sourceFiles/IfadelerImages/hastaF.webp', '/swipenglish/sourceFiles/IfadelerSound/hasta.mp3');
+createCard('card3', '/swipenglish/sourceFiles/IfadelerImages/kizginB.webp', '/swipenglish/sourceFiles/IfadelerImages/kizginF.webp', '/swipenglish/sourceFiles/IfadelerSound/sinirli.mp3');
+createCard('card4', '/swipenglish/sourceFiles/IfadelerImages/korkmusB.webp','/swipenglish/sourceFiles/IfadelerImages/korkmusF.webp' ,'/swipenglish/sourceFiles/IfadelerSound/korkmus.mp3');
+createCard('card5', '/swipenglish/sourceFiles/IfadelerImages/mutluB.webp','/swipenglish/sourceFiles/IfadelerImages/mutluF.webp' ,'/swipenglish/sourceFiles/IfadelerSound/mutlu.mp3.');
+createCard('card6', '/swipenglish/sourceFiles/IfadelerImages/stresliB.webp','/swipenglish/sourceFiles/IfadelerImages/stresliF.webp' ,'/swipenglish/sourceFiles/IfadelerSound/.');
+createCard('card7', '/swipenglish/sourceFiles/IfadelerImages/uykuluB.webp','/swipenglish/sourceFiles/IfadelerImages/uykuluF.webp' ,'/swipenglish/sourceFiles/IfadelerSound/.');
+createCard('card8', '/swipenglish/sourceFiles/IfadelerImages/uzgunB.webp','/swipenglish/sourceFiles/IfadelerImages/uzgunF.webp' ,'/swipenglish/sourceFiles/IfadelerSound/uzgun.mp3.');
+createCard('card9', '/swipenglish/sourceFiles/IfadelerImages/yorgunB.webp','/swipenglish/sourceFiles/IfadelerImages/yorgunF.webp' ,'/swipenglish/sourceFiles/IfadelerSound/yorgun.mp3');

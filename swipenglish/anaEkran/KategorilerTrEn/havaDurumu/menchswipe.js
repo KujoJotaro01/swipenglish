@@ -77,14 +77,14 @@ function setupDraggableCard(cardId) {
     card.addEventListener('mousemove', handleDrag);
     card.addEventListener('touchmove', handleDrag);
 }
-// createCard('cardX', '/swipenglish/sourceFiles/aylarImages/.webp', '/swipenglish/sourceFiles/aylarImages/.webp' ,'/swipenglish/sourceFiles/hDurumuSoundSound/.mp3');
-createCard('card1', '/swipenglish/sourceFiles/aylarImages/cloudyB.webp', '/swipenglish/sourceFiles/aylarImages/cloudyF.webp', '/swipenglish/sourceFiles/hDurumuSound/bulutlu.mp3');
-createCard('card2', '/swipenglish/sourceFiles/aylarImages/foggyB.webp', '/swipenglish/sourceFiles/aylarImages/foggyF.webp', '/swipenglish/sourceFiles/hDurumuSound/sisli.mp3');
-createCard('card3', '/swipenglish/sourceFiles/aylarImages/partlycloudyB.webp', '/swipenglish/sourceFiles/aylarImages/partlycloudyF.webp', '/swipenglish/sourceFiles/hDurumuSound/parcalıBulutlu.mp3');
-createCard('card4', '/swipenglish/sourceFiles/aylarImages/rainbowB.webp', '/swipenglish/sourceFiles/aylarImages/rainbowF.webp', '/swipenglish/sourceFiles/hDurumuSound/gokKusagı.mp3');
-createCard('card5', '/swipenglish/sourceFiles/aylarImages/rainyB.webp', '/swipenglish/sourceFiles/aylarImages/rainyF.webp', '/swipenglish/sourceFiles/hDurumuSound/yagmurlu.mp3');
-createCard('card6', '/swipenglish/sourceFiles/aylarImages/snowyB.webp', '/swipenglish/sourceFiles/aylarImages/snowyF.webp', '/swipenglish/sourceFiles/hDurumuSound/karlı.mp3');
-createCard('card7', '/swipenglish/sourceFiles/aylarImages/stormyB.webp', '/swipenglish/sourceFiles/aylarImages/stormyF.webp', '/swipenglish/sourceFiles/hDurumuSound/fırtınalı.mp3');
-createCard('card8', '/swipenglish/sourceFiles/aylarImages/sunnyB.webp', '/swipenglish/sourceFiles/aylarImages/sunnyF.webp', '/swipenglish/sourceFiles/hDurumuSound/gunesli.mp3');
-createCard('card9', '/swipenglish/sourceFiles/aylarImages/tornadoB.webp', '/swipenglish/sourceFiles/aylarImages/tornadoF.webp', '/swipenglish/sourceFiles/hDurumuSound/kasırga.mp3');
-createCard('card10', '/swipenglish/sourceFiles/aylarImages/windyB.webp', '/swipenglish/sourceFiles/aylarImages/windyF.webp', '/swipenglish/sourceFiles/hDurumuSound/ruzgarlı.mp3');
+// createCard('cardX', '/swipenglish/sourceFiles/hDurumuImages/.webp', '/swipenglish/sourceFiles/hDurumuImages/.webp' ,'/swipenglish/sourceFiles/hDurumuSoundSound/.mp3');
+createCard('card1', '/swipenglish/sourceFiles/hDurumuImages/cloudyB.webp', '/swipenglish/sourceFiles/hDurumuImages/cloudyF.webp', '/swipenglish/sourceFiles/hDurumuSound/bulutlu.mp3');
+createCard('card2', '/swipenglish/sourceFiles/hDurumuImages/foggyB.webp', '/swipenglish/sourceFiles/hDurumuImages/foggyF.webp', '/swipenglish/sourceFiles/hDurumuSound/sisli.mp3');
+createCard('card3', '/swipenglish/sourceFiles/hDurumuImages/partlycloudyB.webp', '/swipenglish/sourceFiles/hDurumuImages/partlycloudyF.webp', '/swipenglish/sourceFiles/hDurumuSound/parcalıBulutlu.mp3');
+createCard('card4', '/swipenglish/sourceFiles/hDurumuImages/rainbowB.webp', '/swipenglish/sourceFiles/hDurumuImages/rainbowF.webp', '/swipenglish/sourceFiles/hDurumuSound/gokKusagı.mp3');
+createCard('card5', '/swipenglish/sourceFiles/hDurumuImages/rainyB.webp', '/swipenglish/sourceFiles/hDurumuImages/rainyF.webp', '/swipenglish/sourceFiles/hDurumuSound/yagmurlu.mp3');
+createCard('card6', '/swipenglish/sourceFiles/hDurumuImages/snowyB.webp', '/swipenglish/sourceFiles/hDurumuImages/snowyF.webp', '/swipenglish/sourceFiles/hDurumuSound/karlı.mp3');
+createCard('card7', '/swipenglish/sourceFiles/hDurumuImages/stormyB.webp', '/swipenglish/sourceFiles/hDurumuImages/stormyF.webp', '/swipenglish/sourceFiles/hDurumuSound/fırtınalı.mp3');
+createCard('card8', '/swipenglish/sourceFiles/hDurumuImages/sunnyB.webp', '/swipenglish/sourceFiles/hDurumuImages/sunnyF.webp', '/swipenglish/sourceFiles/hDurumuSound/gunesli.mp3');
+createCard('card9', '/swipenglish/sourceFiles/hDurumuImages/tornadoB.webp', '/swipenglish/sourceFiles/hDurumuImages/tornadoF.webp', '/swipenglish/sourceFiles/hDurumuSound/kasırga.mp3');
+createCard('card10', '/swipenglish/sourceFiles/hDurumuImages/windyB.webp', '/swipenglish/sourceFiles/hDurumuImages/windyF.webp', '/swipenglish/sourceFiles/hDurumuSound/ruzgarlı.mp3');

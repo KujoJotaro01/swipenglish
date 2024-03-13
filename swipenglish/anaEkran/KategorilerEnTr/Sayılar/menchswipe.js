@@ -75,6 +75,7 @@ function setupDraggableCard(cardId) {
     card.addEventListener('touchstart', startDragging);
     card.addEventListener('touchend', stopDragging);
     card.addEventListener('mousemove', handleDrag);
+    card.addEventListener('touchmove', handleDrag);
 }
 
 // Create cards createCard('cardX', '/swipenglish/sourceFiles/sayılarImages/.webp', '/swipenglish/sourceFiles/sayılarImages/.webp' ,'/swipenglish/sourceFiles/sayılarSound/.mp3');

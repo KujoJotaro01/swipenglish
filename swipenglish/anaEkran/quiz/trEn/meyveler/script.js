@@ -118,15 +118,7 @@ const questions = [
             {text: "Kiwi", word: "/swipenglish/sourceFiles/meyvelerSound/kivi.mp3", correct: false},
         ]
     },
-    {
-        question: "/swipenglish/sourceFiles/quizImages/.webp",
-        answers: [
-            {text: "Melon", word: "/swipenglish/sourceFiles/meyvelerSound/.mp3", correct: false},
-            {text: "Strawberry", word: "/swipenglish/sourceFiles/meyvelerSound/.mp3", correct: false},
-            {text: "Cherry", word: "/swipenglish/sourceFiles/meyvelerSound/.mp3", correct: false},
-            {text: "Perry", word: "/swipenglish/sourceFiles/meyvelerSound/.mp3", correct: true},
-        ]
-    },
+
     // Diğer sorular...
 ];
 

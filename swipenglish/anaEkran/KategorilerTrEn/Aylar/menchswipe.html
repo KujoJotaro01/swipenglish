@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="/swipenglish/menchswipe.css">
     <style>
         body {
-            margin: 0; /* Body'nin varsayılan margin'ini sıfırla */
-            padding: 0; /* Body'nin varsayılan padding'ini sıfırla */
-            height: 100vh; /* Body'nin tam ekran yüksekliğinde olmasını sağla */
             overflow-x: hidden; /* Yatay kaydırmayı engelle */
             position: relative; /* Body'ye göre diğer elementlerin pozisyonunu ayarla */
         }
@@ -71,7 +68,7 @@
         }
         @media screen and (max-width: 768px) {
     .gallery-image {
-        width: 50vh; /* Görüntünün maksimum genişliğini, cihaz ekranının genişliğine uyacak şekilde ayarlar */
+        max-width: 45vh; /* Görüntünün maksimum genişliğini, cihaz ekranının genişliğine uyacak şekilde ayarlar */
         height: auto; /* Oranlar korunarak görüntünün boyutunu otomatik olarak ayarlar */
         align-items: center;
         right: 5vh;
@@ -80,7 +77,7 @@
     </style>
 </head>
 <body>
-    <button class="tanitici" onclick="openGallery()">
+    <button class="tanitici" id="myButton" onclick="startTimer() ">
         <img src="soru.png" alt="Button Image"> Öğretici
     </button>
 
@@ -118,7 +115,15 @@
                 galleryImage.src = images[currentIndex];
             }
         }
-    
+        function startTimer() {
+        var button = document.getElementById("myButton");
+        button.disabled = true; // Butonun tekrar tıklanmasını engellemek için devre dışı bırakıyoruz.
+        setTimeout(function() {
+        button.style.display = "none"; // Butonu gizle
+        button.disabled = false; // Butonu tekrar tıklanabilir hale getir
+        }, 5000); // 10 saniye (10000 milisaniye) sonra gizle
+    }
+
         // Tanıtıcı butona tıklandığında galeriyi aç
         document.querySelector('.tanitici').addEventListener('click', openGallery);
     </script>

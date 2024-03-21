@@ -12,7 +12,7 @@
         }
         .tanitici {
             right: 10px;
-            top: 90px; /* Yukarıdan 10 piksel boşluk bırak */
+            top: 15px; /* Yukarıdan 10 piksel boşluk bırak */
             display: flex;
             z-index: 1;
             position: fixed; /* Sayfa kaydırılsa bile sabit kalmasını sağla */
@@ -24,7 +24,7 @@
             justify-content: center;
         }
         .tanitici img {
-            margin-right: 3vh; /* Görsel ile metin arasında bir boşluk bırakmak için */
+            margin-right: 1vh; /* Görsel ile metin arasında bir boşluk bırakmak için */
             height: 10vh; /* Görsel yüksekliğini viewport yüksekliğine göre ayarla */
         }
         .gallery-container {
@@ -66,19 +66,17 @@
             border-radius: 10px;
             font-size: 25px;
         }
-        @media screen and (max-width: 768px) {
-    .gallery-image {
-        max-width: 45vh; /* Görüntünün maksimum genişliğini, cihaz ekranının genişliğine uyacak şekilde ayarlar */
-        height: auto; /* Oranlar korunarak görüntünün boyutunu otomatik olarak ayarlar */
-        align-items: center;
-        right: 5vh;
-    }
+        @media  (max-width: 768px) {     
+.gallery-image {
+    width: 30vh; /* Genişliği %100 yap */
+    height: 90vh; /* Yüksekliği otomatik olarak ayarla */
 }
+        
     </style>
 </head>
 <body>
     <button class="tanitici" id="myButton" onclick="startTimer() ">
-        <img src="soru.png" alt="Button Image"> Öğretici
+        <img src="soru1.png" alt="Button Image"> Öğretici
     </button>
 
     <div class="gallery-container" id="galleryContainer">

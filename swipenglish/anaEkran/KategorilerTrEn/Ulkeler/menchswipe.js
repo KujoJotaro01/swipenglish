@@ -80,18 +80,16 @@ function setupDraggableCard(cardId) {
 }
 // Create cards // Create cards  createCard('card', 'image/.webp', 'image/.webp', 'sound/.mp3');
  
-createCard('card1', '/swipenglish/sourceFiles/ulkelerImages/almanya_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/germany_copy.webp', 'swipenglish/sourceFiles/ulkelerSound/almanya.mp3');
-createCard('card2', '/swipenglish/sourceFiles/ulkelerImages/amerika_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/america_copy.webp', 'swipenglish/sourceFiles/ulkelerSound/amerika.mp3');
-createCard('card3', '/swipenglish/sourceFiles/ulkelerImages/arjantin_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/argentina_copy.webp', 'swipenglish/sourceFiles/ulkelerSound/arjantin.mp3');
-createCard('card4', '/swipenglish/sourceFiles/ulkelerImages/brazilya_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/brazil_copy.webp5', 'swipenglish/sourceFiles/ulkelerSound/brazilya.mp3');
-createCard('card6', '/swipenglish/sourceFiles/ulkelerImages/cin_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/china_copy.webp', 'swipenglish/sourceFiles/ulkelerSound/.mp3');
-createCard('card7', '/swipenglish/sourceFiles/ulkelerImages/msr_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/egypt_copy.webp', 'swipenglish/sourceFiles/ulkelerSound/msr.mp3');
-createCard('card8', '/swipenglish/sourceFiles/ulkelerImages/ingiltere_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/england_copy.webp', 'swipenglish/sourceFiles/ulkelerSound/ingiltere.mp3');
-createCard('card9', '/swipenglish/sourceFiles/ulkelerImages/fas_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/morocco_copy.webp', 'swipenglish/sourceFiles/ulkelerSound/fas.mp3');
-createCard('card10', '/swipenglish/sourceFiles/ulkelerImages/fransa_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/france_copy.webp', 'swipenglish/sourceFiles/ulkelerSound/fransa.mp3');
-createCard('card11', '/swipenglish/sourceFiles/ulkelerImages/ispanya_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/spain_copy.webp', 'swipenglish/sourceFiles/ulkelerSound/ispanya.mp3');
-createCard('card12', '/swipenglish/sourceFiles/ulkelerImages/italya_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/taly_copy.webp', 'swipenglish/sourceFiles/ulkelerSound/italya.mp3');
-createCard('card13', '/swipenglish/sourceFiles/ulkelerImages/kore_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/skore_copy.webp', 'swipenglish/sourceFiles/ulkelerSound/guney_kore.mp3');
-
-
-createCard('card', '/swipenglish/sourceFiles/ulkelerImages/rusya_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/russia_copy.webp', 'swipenglish/sourceFiles/ulkelerSound/rusya.mp3');
+createCard('card1', '/swipenglish/sourceFiles/ulkelerImages/almanya_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/germany_copy.webp', '/swipenglish/sourceFiles/ulkelerSound/almanya.mp3');
+createCard('card2', '/swipenglish/sourceFiles/ulkelerImages/amerika_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/america_copy.webp', '/swipenglish/sourceFiles/ulkelerSound/amerika.mp3');
+createCard('card3', '/swipenglish/sourceFiles/ulkelerImages/arjantin_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/argentina_copy.webp', '/swipenglish/sourceFiles/ulkelerSound/arjantin.mp3');
+createCard('card4', '/swipenglish/sourceFiles/ulkelerImages/brezilya_copy.webp','/swipenglish/sourceFiles/ulkelerImages/brazil_copy.webp', '/swipenglish/sourceFiles/ulkelerSound/brazilya.mp3');
+createCard('card6', '/swipenglish/sourceFiles/ulkelerImages/cin_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/china_copy.webp', '/swipenglish/sourceFiles/ulkelerSound/cin.mp3');
+createCard('card7', '/swipenglish/sourceFiles/ulkelerImages/msr_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/egypt_copy.webp', '/swipenglish/sourceFiles/ulkelerSound/msr.mp3');
+createCard('card8', '/swipenglish/sourceFiles/ulkelerImages/ingiltere_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/england_copy.webp', '/swipenglish/sourceFiles/ulkelerSound/ingiltere.mp3');
+createCard('card9', '/swipenglish/sourceFiles/ulkelerImages/fas_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/morocco_copy.webp', '/swipenglish/sourceFiles/ulkelerSound/fas.mp3');
+createCard('card10', '/swipenglish/sourceFiles/ulkelerImages/fransa_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/france_copy.webp', '/swipenglish/sourceFiles/ulkelerSound/fransa.mp3');
+createCard('card11', '/swipenglish/sourceFiles/ulkelerImages/ispanya_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/spain_copy.webp', '/swipenglish/sourceFiles/ulkelerSound/ispanya.mp3');
+createCard('card12', '/swipenglish/sourceFiles/ulkelerImages/italya_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/taly_copy.webp', '/swipenglish/sourceFiles/ulkelerSound/italya.mp3');
+createCard('card13', '/swipenglish/sourceFiles/ulkelerImages/kore_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/skore_copy.webp', '/swipenglish/sourceFiles/ulkelerSound/guney_kore.mp3');
+createCard('card14', '/swipenglish/sourceFiles/ulkelerImages/rusya_copy.webp', '/swipenglish/sourceFiles/ulkelerImages/russia_copy.webp', '/swipenglish/sourceFiles/ulkelerSound/rusya.mp3');

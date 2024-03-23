@@ -80,13 +80,13 @@ function setupDraggableCard(cardId) {
 }
 // Create cards ('cardX', '/swipenglish/sourceFiles/mesleklerImages/ _copy.webp', '/swipenglish/sourceFiles/mesleklerImages/ _copy.webp', '.mp3');
 
-createCard('card1', '/swipenglish/sourceFiles/mesleklerImages/mimar_copy.webp', '/swipenglish/sourceFiles/mesleklerImages/architect_copy.webp', '.mp3');
-createCard('card2', '/swipenglish/sourceFiles/mesleklerImages/ressam_copy.webp', '/swipenglish/sourceFiles/mesleklerImages/artist_copy.webp', '.mp3');
-createCard('card3', '/swipenglish/sourceFiles/mesleklerImages/asc_copy.webp', '/swipenglish/sourceFiles/mesleklerImages/chef_copy.webp', '.mp3');
-createCard('card4', '/swipenglish/sourceFiles/mesleklerImages/avukat_copy.webp', '/swipenglish/sourceFiles/mesleklerImages/lawyer_copy.webp', '.mp3');
-createCard('card5', '/swipenglish/sourceFiles/mesleklerImages/frnc.webp', '/swipenglish/sourceFiles/mesleklerImages/baker.webp', '.mp3');
-createCard('card6', '/swipenglish/sourceFiles/mesleklerImages/ciftci.webp', '/swipenglish/sourceFiles/mesleklerImages/farmer.webp', '.mp3');
-createCard('card7', '/swipenglish/sourceFiles/mesleklerImages/doktor.webp', '/swipenglish/sourceFiles/mesleklerImages/doctor.webp', '.mp3');
-createCard('card8', '/swipenglish/sourceFiles/mesleklerImages/muhendis_copy.webp', '/swipenglish/sourceFiles/mesleklerImages/engineer_copy.webp', '.mp3');
-createCard('card9', '/swipenglish/sourceFiles/mesleklerImages/ogretmen.webp', '/swipenglish/sourceFiles/mesleklerImages/teacher_copy.webp', '.mp3');
-createCard('card10', '/swipenglish/sourceFiles/mesleklerImages/polis.webp', '/swipenglish/sourceFiles/mesleklerImages/police.webp', '.mp3');
+createCard('card1', '/swipenglish/sourceFiles/mesleklerImages/mimar_copy.webp', '/swipenglish/sourceFiles/mesleklerImages/architect_copy.webp', '/swipenglish/sourceFiles/mesleklerSound/mimar.mp3');
+createCard('card2', '/swipenglish/sourceFiles/mesleklerImages/ressam_copy.webp', '/swipenglish/sourceFiles/mesleklerImages/artist_copy.webp', '/swipenglish/sourceFiles/mesleklerSound/ressam.mp3');
+createCard('card3', '/swipenglish/sourceFiles/mesleklerImages/asc_copy.webp', '/swipenglish/sourceFiles/mesleklerImages/chef_copy.webp', '/swipenglish/sourceFiles/mesleklerSound/asc.mp3');
+createCard('card4', '/swipenglish/sourceFiles/mesleklerImages/avukat_copy.webp', '/swipenglish/sourceFiles/mesleklerImages/lawyer_copy.webp', '/swipenglish/sourceFiles/mesleklerSound/avukat.mp3');
+createCard('card5', '/swipenglish/sourceFiles/mesleklerImages/frnc.webp', '/swipenglish/sourceFiles/mesleklerImages/baker.webp', '/swipenglish/sourceFiles/mesleklerSound/frnc.mp3');
+createCard('card6', '/swipenglish/sourceFiles/mesleklerImages/ciftci.webp', '/swipenglish/sourceFiles/mesleklerImages/farmer.webp', '/swipenglish/sourceFiles/mesleklerSound/ciftci.mp3');
+createCard('card7', '/swipenglish/sourceFiles/mesleklerImages/doktor.webp', '/swipenglish/sourceFiles/mesleklerImages/doctor.webp', '/swipenglish/sourceFiles/mesleklerSound/doktor.mp3');
+createCard('card8', '/swipenglish/sourceFiles/mesleklerImages/muhendis_copy.webp', '/swipenglish/sourceFiles/mesleklerImages/engineer_copy.webp', '/swipenglish/sourceFiles/mesleklerSound/muhendis.mp3');
+createCard('card9', '/swipenglish/sourceFiles/mesleklerImages/ogretmen.webp', '/swipenglish/sourceFiles/mesleklerImages/teacher_copy.webp', '/swipenglish/sourceFiles/mesleklerSound/ogretmen.mp3');
+createCard('card10', '/swipenglish/sourceFiles/mesleklerImages/polis.webp', '/swipenglish/sourceFiles/mesleklerImages/police.webp', '/swipenglish/sourceFiles/mesleklerSound/polis.mp3');

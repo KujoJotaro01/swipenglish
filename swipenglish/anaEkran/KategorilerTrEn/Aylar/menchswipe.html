@@ -5,78 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="/swipenglish/menchswipe.css">
-    <style>
-        body {
-            overflow-x: hidden; /* Yatay kaydırmayı engelle */
-            position: relative; /* Body'ye göre diğer elementlerin pozisyonunu ayarla */
-        }
-        .tanitici {
-            right: 10px;
-            top: 15px; /* Yukarıdan 10 piksel boşluk bırak */
-            display: flex;
-            z-index: 1;
-            position: fixed; /* Sayfa kaydırılsa bile sabit kalmasını sağla */
-            border: none;
-            background-color: transparent;
-            font-weight: bold;
-            font-size: 3vh; /* Yükseklik birimini viewport yüksekliğine göre ayarla */
-            align-items: center;
-            justify-content: center;
-        }
-        .tanitici img {
-            margin-right: 1vh; /* Görsel ile metin arasında bir boşluk bırakmak için */
-            height: 10vh; /* Görsel yüksekliğini viewport yüksekliğine göre ayarla */
-        }
-        .gallery-container {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 10;
-            overflow: hidden;
-        }
-        .gallery-content {
-            position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80%;
-            max-width: 600px;
-        }
-        .gallery-image {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-        .next-button {
-            position: absolute;
-            bottom: 20px;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            right: 20px;
-            width: 75px;
-            height: 50px;
-            cursor: pointer;
-            color: #fff;
-            background-color: yellowgreen;
-            border-radius: 10px;
-            font-size: 25px;
-        }
-        @media  (max-width: 768px) {     
-.gallery-image {
-    width: 30vh; /* Genişliği %100 yap */
-    height: 90vh; /* Yüksekliği otomatik olarak ayarla */
-}
-        
-    </style>
+    
 </head>
 <body>
+    
     <button class="tanitici" id="myButton" onclick="startTimer() ">
-        <img src="soru1.png" alt="Button Image"> Öğretici
+        <img src="/swipenglish/sourceFiles/ogretici0.png" alt="Button Image"> Öğretici
     </button>
 
     <div class="gallery-container" id="galleryContainer">
@@ -87,45 +21,9 @@
     </div>
 
     <main id="main-container"></main>
-
-    <script>
-        var images = ["ogretici1.webp", "ogretici2.webp", "ogretici3.webp"]; // Galeri için gösterilecek öğretici resimlerin listesi
-    
-        var currentIndex = 0;
-        var galleryContainer = document.getElementById('galleryContainer');
-        var galleryImage = document.getElementById('galleryImage');
-    
-        function openGallery() {
-            currentIndex = 0; // Galeri açıldığında ilk fotoğrafı göster
-            galleryImage.src = images[currentIndex];
-            galleryContainer.style.display = 'block';
-        }
-    
-        function closeGallery() {
-            galleryContainer.style.display = 'none';
-        }
-    
-        function nextImage() {
-            currentIndex++;
-            if (currentIndex >= images.length) {
-                closeGallery(); // Son fotoğrafı gösterdikten sonra galeriyi kapat
-            } else {
-                galleryImage.src = images[currentIndex];
-            }
-        }
-        function startTimer() {
-        var button = document.getElementById("myButton");
-        button.disabled = true; // Butonun tekrar tıklanmasını engellemek için devre dışı bırakıyoruz.
-        setTimeout(function() {
-        button.style.display = "none"; // Butonu gizle
-        button.disabled = false; // Butonu tekrar tıklanabilir hale getir
-        }, 5000); // 10 saniye (10000 milisaniye) sonra gizle
-    }
-
-        // Tanıtıcı butona tıklandığında galeriyi aç
-        document.querySelector('.tanitici').addEventListener('click', openGallery);
-    </script>
-
+ 
     <script src="menchswipe.js"></script>
+    <script src="/swipenglish/ogretici.js"></script>
+
 </body>
 </html>

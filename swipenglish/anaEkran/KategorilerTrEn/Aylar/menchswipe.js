@@ -91,3 +91,4 @@ createCard('card9', '/swipenglish/sourceFiles/aylarImages/eylulF.webp', '/swipen
 createCard('card10', '/swipenglish/sourceFiles/aylarImages/octoberF.webp', '/swipenglish/sourceFiles/aylarImages/octoberB.webp', '/swipenglish/sourceFiles/aylarSound/ekim.mp3');
 createCard('card11', '/swipenglish/sourceFiles/aylarImages/kasımF.webp', '/swipenglish/sourceFiles/aylarImages/kasımB.webp', '/swipenglish/sourceFiles/aylarSound/kasim.mp3');
 createCard('card12', '/swipenglish/sourceFiles/aylarImages/decF.webp', '/swipenglish/sourceFiles/aylarImages/decB.webp', '/swipenglish/sourceFiles/aylarSound/aralik.mp3');
+

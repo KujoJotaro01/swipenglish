@@ -160,7 +160,7 @@ border-radius: 10px; /* Scrollbar başlığı köşe yarıçapı */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    max-width: 600px;
+    max-width: 55vh;
 }
 .gallery-image {
     width: 100%;
